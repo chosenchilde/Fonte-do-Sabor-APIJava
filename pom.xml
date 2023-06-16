@@ -11,10 +11,10 @@
 	<groupId>com.chosenchilde</groupId>
 	<artifactId>receitas </artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>receitas </name>
+	<name>Receitas</name>
 	<description>API feita em Java para um site de receitas.</description>
 	<properties>
-		<java.version>17</java.version>
+		<java.version>18</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -26,12 +26,14 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
-		<dependency>
+		<!--<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
 			<scope>runtime</scope>
 			<optional>true</optional>
 		</dependency>
+		-->
+		
 		<dependency>
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
