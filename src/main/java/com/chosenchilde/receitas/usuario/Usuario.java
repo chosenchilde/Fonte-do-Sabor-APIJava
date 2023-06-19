@@ -1,6 +1,5 @@
 package com.chosenchilde.receitas.usuario;
 
-import javax.print.DocFlavor.STRING;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

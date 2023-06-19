@@ -1,4 +1,4 @@
-package Receita;
+package com.chosenchilde.receitas.receita;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -23,6 +23,19 @@ public class Receita {
 	@Lob
 	@Column(columnDefinition = "LONGTEXT")
 	private String rcp_content;
+
+	@Lob
+	@Column(columnDefinition = "LONGTEXT")
+	private String rcp_ingredients;
+
+	@Column
+	private int rcp_view;
+
+	@Column(length = 31)
+	private String rcp_status;
+
+	@Column
+	private int rcp_author;
 
 	public Long getRcp_id() {
 		return rcp_id;
@@ -87,18 +100,5 @@ public class Receita {
 	public void setRcp_author(int rcp_author) {
 		this.rcp_author = rcp_author;
 	}
-
-	@Lob
-	@Column(columnDefinition = "LONGTEXT")
-	private String rcp_ingredients;
-
-	@Column
-	private int rcp_view;
-
-	@Column(length = 31)
-	private String rcp_status;
-
-	@Column
-	private int rcp_author;
 
 }
