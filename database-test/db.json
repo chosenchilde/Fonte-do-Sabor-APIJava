@@ -2,8 +2,7 @@
     "receitas":[{"rcp_id":"",
     "rcp_name":"Pudim de Leite",
     "rcp_img":"https://assets.unileversolutions.com/recipes-v2/236947.jpg",
-    "rcp_content":"Pudim. Primeiro, bata bem os ovos no liquidificador. Acrescente o leite condensado e o leite, e bata novamente. Calda. Derreta o açúcar na panela até ficar moreno, acrescente a água e deixe engrossar. Coloque em uma forma redonda e despeje a massa do pudim por cima. 
-    Asse em forno médio por 45 minutos, com a assadeira redonda dentro de uma maior com água. Espete um garfo para ver se está bem assado. Deixe esfriar e desenforme.",
+    "rcp_content": "<h3>Pudim</h3> Primeiro, bata bem os ovos no liquidificador.<br> Acrescente o leite condensado e o leite, e bata novamente.</br><h3>Calda</h3> Derreta o açúcar na panela até ficar moreno, acrescente a água e deixe engrossar.<br>Coloque em uma forma redonda e despeje a massa do pudim por cima.</br> Asse em forno médio por 45 minutos, com a assadeira redonda dentro de uma maior com água. Espete um garfo para ver se está bem assado. Deixe esfriar e desenforme.",
     "rcp_ingredients":"leite condensado, leite, ovos, açúcar, água",
     "rcp_view":"",
     "rcp_status":"",
@@ -12,9 +11,7 @@
     {"rcp_id":"",
     "rcp_name":"Bolo de Morango",
     "rcp_img":"https://www.receitasnestle.com.br/sites/default/files/srh_recipes/9f412d6582c2ed971ecfe5295d353b68.jpg",
-    "rcp_content":"Em uma batedeira, bata os ovos até dobrar de volume, acrescente o açúcar e bata bem. Desligue a batedeira, misture aos poucos e delicadamente a farinha de trigo, o chocolate em pó e o fermento em pó peneirados. Recheio e Cobertura. Separe alguns morangos para a decoração, corte em fatias o restante e reserve. Em uma panela, coloque o leite condensado, o leite, e o amido de milho e leve ao fogo médio mexendo sempre até engrossar. Retire do fogo, acrescente metade do chocolate e misture delicadamente até o Chocolate derreter e incorporar ao creme.
-    Acrescente o creme de leite e misture até ficar homogêneo. Com uma faca serrilhada, corte a massa do bolo em duas partes, recheie com metade do creme e com os morangos fatiados, e cubra com o restante do creme.
-    Decore com o restante do chocolate ralado em ralo grosso e com os morangos inteiros reservados.",
+    "rcp_content":"Em uma batedeira, bata os ovos até dobrar de volume, acrescente o açúcar e bata bem.<br>Desligue a batedeira, misture aos poucos e delicadamente a farinha de trigo, o chocolate em pó e o fermento em pó peneirados.</br><h3>Recheio e Cobertura</h3>Separe alguns morangos para a decoração, corte em fatias o restante e reserve.<br>Em uma panela, coloque o leite condensado, o leite, e o amido de milho e leve ao fogo médio mexendo sempre até engrossar.</br>Retire do fogo, acrescente metade do chocolate e misture delicadamente até o Chocolate derreter e incorporar ao creme.<br>Acrescente o creme de leite e misture até ficar homogêneo.</br>Com uma faca serrilhada, corte a massa do bolo em duas partes, recheie com metade do creme e com os morangos fatiados, e cubra com o restante do creme.<br>Decore com o restante do chocolate ralado em ralo grosso e com os morangos inteiros reservados.</br>",
     "rcp_ingredients":"ovos, açúcar, farinha de trigo, chocolate em pó, fermento em pó, morangos, leite condensado, leite, amido de milho, chocolate meio amargo, creme de leite.",
     "rcp_view":"",
     "rcp_status":"",
@@ -24,7 +21,7 @@
     {"rcp_id":"",
     "rcp_name":"Massa de Pizza",
     "rcp_img":"https://conteudo.imguol.com.br/c/entretenimento/ef/2022/03/09/massa-de-pizza-1646872864424_v2_4x3.jpg",
-    "rcp_content":"Misture o fermento, o sal e o açúcar em um pouco de água morna, até que o fermento esteja completamente dissolvido. Em seguida, adicione metade da medida de farinha de trigo, o óleo e mexa até criar uma consistência pastosa. Acrescente o restante da farinha de trigo, a pinga, a água morna e misture bem. Assim que a massa desgrudar das mãos, deixe crescer por 30 minutos. Abra os discos, fure a massa com um garfo e pincele o molho. Leve ao forno médio (180° C), preaquecido, por 15 minutos.",
+    "rcp_content":"Misture o fermento, o sal e o açúcar em um pouco de água morna, até que o fermento esteja completamente dissolvido.<br>Em seguida, adicione metade da medida de farinha de trigo, o óleo e mexa até criar uma consistência pastosa.</br>Acrescente o restante da farinha de trigo, a pinga, a água morna e misture bem. Assim que a massa desgrudar das mãos, deixe crescer por 30 minutos.</br>Abra os discos, fure a massa com um garfo e pincele o molho. Leve ao forno médio (180° C), preaquecido, por 15 minutos.</br>",
     "rcp_ingredients": "farinha de trigo, fermento biológico, água, óleo, sal, açúcar, cachaça",
     "rcp_view":"",
     "rcp_status":"",
