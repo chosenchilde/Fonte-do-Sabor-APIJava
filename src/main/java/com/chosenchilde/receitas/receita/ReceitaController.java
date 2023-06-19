@@ -8,10 +8,14 @@ import org.springframework.web.bind.annotation.PatchMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+@RestController
+@RequestMapping("/receita")
 public class ReceitaController {
 
 	@Autowired
@@ -38,7 +42,7 @@ public class ReceitaController {
 
 		return "{ \"status\" : \"not found\" }";
 	}
-	
+
 	@PostMapping
 	public Receita post(@RequestBody Receita receita) {
 
@@ -46,8 +50,7 @@ public class ReceitaController {
 		// e armazena o objeto nele.
 		return repository.save(receita);
 	}
-	
-	
+
 	@PatchMapping(path = "/{id}", produces = "application/json")
 	public String updatePartial(@PathVariable Long id, @RequestBody Receita receita) throws JsonProcessingException {
 
@@ -56,18 +59,17 @@ public class ReceitaController {
 
 			// Obtém o registro do banco e armazena em "original".
 			Receita original = repository.findById(id).get();
-			
+
 			receita = original;
 
-			receita.setRcp_view(original.getRcp_view() +1);
-			
+			receita.setRcp_view(original.getRcp_view() + 1);
 
 			// Salva o registro atualizado.
 			repository.save(receita);
 
 			// Retorna o registro atualizado usando o método GET.
 			// Nota: adicione "throws JsonProcessingException" ao método "updateAll()".
-			return  getReceita(id);
+			return getReceita(id);
 
 		}
 
