@@ -1,4 +1,4 @@
-package com.chosenchilde.receitas.usuario;
+package com.chosenchilde.receitas.comentarios;
 
 import java.util.List;
 
@@ -15,29 +15,29 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 @CrossOrigin
 @RestController
-@RequestMapping("/usuario")
-public class UsuarioController {
+@RequestMapping("/comentario")
+public class ComentariosController {
 
 	@Autowired
-	private UsuarioRepository repository;
+	private ComentariosRepository repository;
 
 	@GetMapping
-	public List<Usuario> getAll() {
+	public List<Comentarios> getAll() {
+
 		return repository.findAll();
 	}
 
-	// Get
 	@GetMapping(path = "/{id}", produces = "application/json")
-	public String getUsuario(@PathVariable Long id) throws JsonProcessingException {
+	public String getComentarios(@PathVariable Long id) throws JsonProcessingException {
 
 		// Se o registro com o Id existe.
 		if (repository.existsById(id)) {
 
 			ObjectMapper mapper = new ObjectMapper();
 
-			Usuario usuario = repository.findById(id).get();
+			Comentarios comentario = repository.findById(id).get();
 
-			return mapper.writeValueAsString(usuario);
+			return mapper.writeValueAsString(comentario);
 		}
 
 		return "{ \"status\" : \"not found\" }";
@@ -45,12 +45,10 @@ public class UsuarioController {
 
 	// Post
 	@PostMapping
-	public Usuario post(@RequestBody Usuario usuario) {
+	public Comentarios post(@RequestBody Comentarios comentario) {
 
 		// O método "save()" de JPA cria um novo registro
 		// e armazena o objeto nele.
-		return repository.save(usuario);
+		return repository.save(comentario);
 	}
-
-	
 }

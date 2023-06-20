@@ -12,3 +12,29 @@ org.h2.jdbc.JdbcSQLNonTransientException: The object is already closed [90007-21
 org.h2.jdbc.JdbcSQLNonTransientException: The object is already closed [90007-214]
 2023-06-19 21:22:34 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLNonTransientException: The object is already closed [90007-214]
+2023-06-20 19:45:17 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM COMENTARIOS RECEITA [*]USUARIO"; SQL statement:
+SELECT * FROM COMENTARIOS RECEITA USUARIO [42000-214]
+2023-06-20 19:45:23 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM COMENTARIOS RECEITA [*]USUARIO USUARIO"; SQL statement:
+SELECT * FROM COMENTARIOS RECEITA USUARIO USUARIO [42000-214]
+2023-06-20 19:45:23 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM COMENTARIOS RECEITA [*]USUARIO USUARIO"; SQL statement:
+SELECT * FROM COMENTARIOS RECEITA USUARIO USUARIO [42000-214]
+2023-06-20 19:45:26 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM COMENTARIOS RECEITA [*]USUARIO USUARIO USUARIO"; SQL statement:
+SELECT * FROM COMENTARIOS RECEITA USUARIO USUARIO USUARIO [42000-214]
+2023-06-20 19:45:28 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM COMENTARIOS RECEITA [*]USUARIO USUARIO USUARIO COMENTARIOS"; SQL statement:
+SELECT * FROM COMENTARIOS RECEITA USUARIO USUARIO USUARIO COMENTARIOS [42000-214]
+2023-06-20 19:46:59 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM COMENTARIOS RECEITA [*]USUARIO USUARIO USUARIO COMENTARIOS RECEITA"; SQL statement:
+SELECT * FROM COMENTARIOS RECEITA USUARIO USUARIO USUARIO COMENTARIOS RECEITA [42000-214]
+2023-06-20 20:14:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: The object is already closed [90007-214]
+2023-06-20 20:15:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: The object is already closed [90007-214]
+2023-06-20 20:23:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: The object is already closed [90007-214]
+2023-06-20 20:23:36 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: The object is already closed [90007-214]
