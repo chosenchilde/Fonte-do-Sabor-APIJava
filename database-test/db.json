@@ -26,10 +26,67 @@
     "rcp_view":"",
     "rcp_status":"",
     "rcp_author":"1"
+    },
+    {"rcp_id":"",
+    "rcp_name":"Bife de Panela",
+    "rcp_img":"https://img.cybercook.com.br/imagens/receitas/313/bife-de-panela.jpg",
+    "rcp_content":"Coloque os bifes em uma tigela, tempere com alho, sal e pimenta-do-reino. Em uma panela, aqueça o óleo e frite os bifes até dourar os dois lados.<br>Acrescente a cebola, o tomate e o pimentão, mexendo até o pimentão amaciar. Com as mãos, esfarele o caldo de carne, junte à panela, acrescente a água quente e cozinhe por 15 minutos ou até a carne amaciar, mexendo de vez em quando.</br>Disponha a carne em um refratário e espalhe os legumes por cima. Se desejar, sirva acompanhado de arroz branco.",
+    "rcp_ingredients":"Carne tipo coxão mole, alho, sal, pimenta-do-reino, óleo, cebola, tomate, pimentão, caldo de carne, água.",
+    "rcp_view":"",
+    "rcp_status":"",
+    "rcp_author":"2"
+    },
+    
+    {"rcp_id":"",
+    "rcp_name":"Filé com Batatas",
+    "rcp_img":"https://www.saboresajinomoto.com.br/uploads/images/recipes/file-com-batatas-coradas.jpg",
+    "rcp_content":"Em uma tigela, tempere os filés com o azeite, a salsa picada, a cebola, o suco de limão, sal e pimenta-do-reino.<br>Em uma frigideira ou grelha, frite a carne até dourar os dois lados. Se desejar, sirva os filés acompanhados de batatas cozidas na manteiga e decorado com ervas frescas.</br>",
+    "rcp_ingredients":"Carne tipo filé mignon, azeite, cebola, limão, sal, pimenta-do-reino.",
+    "rcp_view":"",
+    "rcp_status":"",
+    "rcp_author":"1"
+    },
+    
+    {"rcp_id":"",
+    "rcp_name":"Batata recheada à bolonhesa",
+    "rcp_img":"https://claudia.abril.com.br/wp-content/uploads/2020/02/receita-batata-recheada-a-bolonhesa.jpg?quality=85",
+    "rcp_content":"Aqueça o forno a 200°C. Lave bem e cozinhe as batatas com a casca. Não deixe amolecer demais. Reserve.<br>Em uma panela aqueça o azeite, doure a cebola e refogue a carne moída até ficar bem sequinha. Tempere com sal e pimenta-do-reino.</br>Acrescente o molho de tomate e deixe cozinhar por mais cinco minutos. Desligue o fogo e misture o creme de leite no molho. Faça um corte no meio de cada batata, deixando 2 cm em cada extremidade.<br>Recheie com o molho, cubra coma mussarela ralada, a batata-palha e salpique a salsa. Leveao forno para gratinar por aproximadamente dez minutos. Sirva em seguida.</br>",
+    "rcp_ingredients":"Batatas, azeite, cebola, carne moida, sal, pimenta-do-reino, molho de tomate, creme de leite sem soro, mussarela, batat palha, salsa.",
+    "rcp_view":"",
+    "rcp_status":"",
+    "rcp_author":"2"
+    },
+
+    {"rcp_id":"",
+    "rcp_name":"Lasanha caprese",
+    "rcp_img":"https://claudia.abril.com.br/wp-content/uploads/2020/02/receita-lasanha-caprese.jpg?quality=85",
+    "rcp_content":"Cozinha a lasanha al dente. Escorra e enxugue. Tempere o tomate com o sal, a pimenta, o azeite e o manjericão.<br>Em um refratário coloque uma camada com a metade da massa. distribua rodelas de tomate e a mussarela.</br>Por cima coloque o restante da massa e termine com uma camada de tomate e mussarela. regue com o azeite e salpique as folhas de manjericão.Leve ao forno prequecido a 220°C até a mussarela se derreter.",
+    "rcp_ingredients":"Massa de lasanha, tomate, sal, pimenta, azeite, majericão, mussarela.",
+    "rcp_view":"",
+    "rcp_status":"",
+    "rcp_author":"1"
+    },
+
+    {"rcp_id":"",
+    "rcp_name":"Pavê de chocolate branco",
+    "rcp_img":"https://claudia.abril.com.br/wp-content/uploads/2020/02/receita-pave-de-chocolate-branco-2.jpg?quality=85",
+    "rcp_content":"No liquidificador, bata a gelatina polvilhada no leite e dissolva em banho-maria com os demais ingredientes, menos o bombom, até homogeneizar.<br>Em taças, intercale pedaços de bombom picado e de creme, terminando em creme. Cubra com o chocolate. Leve à geladeira por 2 horas. Sirva.</br>",
+    "rcp_ingredients":"Gelatina sem sabor, leite, leite condensado, creme de leite, chocolate em pó, essencia de baunilha, bombom de chocolate branco, chocolate ao leite.",
+    "rcp_view":"",
+    "rcp_status":"",
+    "rcp_author":"2"
+    },
+    
+    {"rcp_id":"",
+    "rcp_name":"Torta Romeu-e-Julieta",
+    "rcp_img":"https://cdn0.tudoreceitas.com/pt/posts/2/6/1/torta_de_romeu_e_julieta_de_liquidificador_4162_orig.jpg",
+    "rcp_content":"Misture os ingredientes da massa e forre o fundo de uma fôrma de aro removivel. Hidrate a gelatina na água e dissolva em banho-maria. Bata no liquidificador com os demais ingredientes do recheio e coloque sobre a massa<br>leve a geladeira por 4 horas. Então, desenforme a torta e espalhe a goiabada. Sirva em seguida.</br>",
+    "rcp_ingredients":"Biscoito de maisena, manteiga, gelatina sem sabor, água, requeijão, leite condensado, creme de leite, goiabada cremosa.",
+    "rcp_view":"",
+    "rcp_status":"",
+    "rcp_author":"1"
     }
-    
-    
-    
+
     
     
     
