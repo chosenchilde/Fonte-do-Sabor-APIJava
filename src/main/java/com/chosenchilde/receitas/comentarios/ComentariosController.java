@@ -51,4 +51,8 @@ public class ComentariosController {
 		// e armazena o objeto nele.
 		return repository.save(comentario);
 	}
-}
+	
+	
+	}
+	
+

@@ -15,7 +15,7 @@ public class Receita {
 	private Long rcp_id;
 
 	@Column(length = 127)
-	private String rcp_name;
+	private String name;
 
 	@Column(length = 255)
 	private String rcp_img;
@@ -26,7 +26,7 @@ public class Receita {
 
 	@Lob
 	@Column(columnDefinition = "LONGTEXT")
-	private String rcp_ingredients;
+	private String ingredients;
 
 	@Column
 	private int rcp_view;
@@ -45,12 +45,12 @@ public class Receita {
 		this.rcp_id = rcp_id;
 	}
 
-	public String getRcp_name() {
-		return rcp_name;
+	public String getName() {
+		return name;
 	}
 
-	public void setRcp_name(String rcp_name) {
-		this.rcp_name = rcp_name;
+	public void setName(String name) {
+		this.name = name;
 	}
 
 	public String getRcp_img() {
@@ -69,12 +69,12 @@ public class Receita {
 		this.rcp_content = rcp_content;
 	}
 
-	public String getRcp_ingredients() {
-		return rcp_ingredients;
+	public String getIngredients() {
+		return ingredients;
 	}
 
-	public void setRcp_ingredients(String rcp_ingredients) {
-		this.rcp_ingredients = rcp_ingredients;
+	public void setIngredients(String ingredients) {
+		this.ingredients = ingredients;
 	}
 
 	public int getRcp_view() {
