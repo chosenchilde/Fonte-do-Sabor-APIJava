@@ -20,7 +20,6 @@ public class Usuario {
 	@Column(length = 127)
 	private String user_bithdate;
 	
-	
 	@Column (length = 255)
 	private  String user_email;
 	
