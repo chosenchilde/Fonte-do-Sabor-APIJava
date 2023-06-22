@@ -85,6 +85,116 @@
     "rcp_view":"",
     "rcp_status":"",
     "rcp_author":"1"
+    },
+
+    {"rcp_id":"",
+    "rcp_name":"Empada de presunto com requeijão",
+    "rcp_img":"https://guiadacozinha.com.br/wp-content/uploads/2019/10/empada-de-presunto-com-requeijao-15939.jpg",
+    "rcp_content":"Em uma tigela, misture todos os ingredientes da massa até ficar homogêneo. Com parte da massa, forre forminhas para empada untadas.<br>Em outra tigela, misture os ingredientes do recheio, recheie e tampe com a massa restante. Pincele com a gema e leve ao forno médio, preaquecido, por 20 minutos ou até dourar.</br>",
+    "rcp_ingredients":"Ricota, farinha, margarina, gema de ovo, presunto, requeijão, azeitonas verdes.",
+    "rcp_view":"",
+    "rcp_status":"",
+    "rcp_author":"2"
+    },
+
+    {"rcp_id":"",
+    "rcp_name":"Empadinha Rápida",
+    "rcp_img":"https://www.sabornamesa.com.br/media/k2/items/cache/facbb06d6d18afd30055031c05e0c8a3_XL.jpg",
+    "rcp_content":"Em uma tigela, misture todos os ingredientes da massa, amassando até desgrudar das mãos. Com parte da massa, forre forminhas para a empada.<br>Misture os ingredientes do recheio e coloque dentro das empadas. Cubra com o restante da massa, pincele com a gema e leve ao forno médio, preaquecido, por 30 minutos ou até dourar. Retire e sirva em seguida.</br>",
+    "rcp_ingredients":"Farinha de trigo, creme de leite, sal, gordura vegetal, ovo, gema, ricota defumada, salsa.",
+    "rcp_view":"",
+    "rcp_status":"",
+    "rcp_author":"1"
+    },
+
+    {"rcp_id":"",
+    "rcp_name":"Torta de chocolate com limão",
+    "rcp_img":"https://www.altoastral.com.br/antigas/uploads/legacy/2016/09/Torta-de-chocolate-com-limao.jpg",
+    "rcp_content":"Misture o biscoito, a manteiga e forre o fundo de uma fôrma de aro removível. Dissolva a gelatina conforme as instruções da embalagem.<br>Misture com os demais ingredientes do recheio e espalhe sobre a massa. Gele por 3 horas. Misture os ingredientes da cobertura e espalhe sobre o recheio. Decore com raspas de limão.</br>",
+    "rcp_ingredients":"Biscoito de chocolate, manteiga, gelatina em pó sem sabor, chocolate meio amargo, creme de leite. rum, creme de leite, leite condensado. suco de limão, casca de limão.",
+    "rcp_view":"",
+    "rcp_status":"",
+    "rcp_author":"2"
+    },
+
+    {"rcp_id":"",
+    "rcp_name":"Esfiha aberta",
+    "rcp_img":"https://i0.wp.com/portaledicase.com/wp-content/uploads/2022/09/shutterstock_2134687355-1.jpg?fit=1200%2C800&ssl=1",
+    "rcp_content":"No liquidificador, bata os ingredientes da massa, menos a farinha, até ficar homogêneo. Despeje em uma tigela, acrescente a farinha e misture até desgrudar das mãos.<br>Deixe descansar por 15 minutos. À parte, misture todos os ingredientes do recheio até indorporar. Em uma superficie enfarinhada, abra a massa com um rolo e corte em circulos com a boca de um copo.</br>Espalhe o recheio e dobre as bordas. Disponha em uma fôrma untada com óleo e leve ao forno médio, preaquecido, por 30 minutos. Sirvo.",
+    "rcp_ingredients":"Óleo, água, ovo, sal, açúcar, fermento biológico fresco, farinha de trigo, farinha de trigo, carne tipo patinho, azeite, cebola, pimenta síria, tomate.",
+    "rcp_view":"",
+    "rcp_status":"",
+    "rcp_author":"1"
+    },
+
+    {"rcp_id":"",
+    "rcp_name":"Coxinha mista",
+    "rcp_img":"https://www.sabornamesa.com.br/media/k2/items/cache/e3d995a152e18bb86fa197fdc98b26b8_XL.jpg",
+    "rcp_content":"Em uma tigela, coloque as carnes, o parmesão, a farinha de trigo, a batat, a salsa, sal, pimenta, 2 ovos e misture bem até incorporar. Com pequenas porções da massa faça bolinhas e modele as coxinhas.<br>Passe no ovo restante ligeiramente batido e na farinha de rosca. Frite em óleo quente, aos poucos até dourar por igual. Retire do fogo, escorra em papel-toalha e sirva em seguida.</br>",
+    "rcp_ingredients":"carne tipo patinho, frango, queijo parmesão, farinha de trigo, batata, salsa, sal, pimenta-do-reino, ovos, farinha de rosca, óleo",
+    "rcp_view":"",
+    "rcp_status":"",
+    "rcp_author":"2"
+    },
+
+    {"rcp_id":"",
+    "rcp_name":"Abobrinha recheada com carne moída",
+    "rcp_img":"https://static.itdg.com.br/images/1200-675/9cd511b4767b08749936617ae7793027/326224-original.jpg",
+    "rcp_content":"Corte a ponta da abobrinha e retire a polpa com cuidado para não furar. Em uma panela, refogue a carne, o azeite, a cebola, o alho, a polpa da abobrinha picada, 1/2 lata do molho de tomate, o cominho, sal e pimenta por 10 minutos.<br>Recheie as abobrinhas com esse refogado e coloque em um refratario. Despeje o restante do molho, polvilhe com a mussarela e leve ao forno médio, pre-aquecido, por 35 minutos. Se desejar, sirva acompanhada de arroz branco e salada.</br>",
+    "rcp_ingredients":"Abobrinhas italianas, carne tipo patinho, azeite, cebola, alho, molho de tomate, cominho, sal, pimenta-do-reino, queijo mussarela.",
+    "rcp_view":"",
+    "rcp_status":"",
+    "rcp_author":"1"
+    },
+
+    {"rcp_id":"",
+    "rcp_name":"Farofa de carne moída com soja",
+    "rcp_img":"https://cooknenjoy.com/wp-content/uploads/2022/09/farofa-de-soja-1-1200x901.jpg",
+    "rcp_content":"Coloque os grãos de soja em uma panela de pressão, cubra com água e cozinhe por 30 minutos, após começar chiar. Retire do fogo, deixe sair a pressão, escorra a água e reserve.<br>Em outra panela, coloque o óleo, o alho, a cebola, a carne refogue até a carne moída amaciar. Junte a água e ferva por 2 minutos. Adicione a soja cozida, a farinha de mandioca, a azeitona, o cheiro-verde, sal, pimenta e misture até incorporar. Sirva em seguida.</br>",
+    "rcp_ingredients":"Grãos de soja, óleo, alho, cebola, carne tipo patinho moída, água, farinha de mandioca, azeitonas verdes, cheiro-verde, sal, pimenta-do-reino.",
+    "rcp_view":"",
+    "rcp_status":"",
+    "rcp_author":"2"
+    },
+
+    {"rcp_id":"",
+    "rcp_name":"Panqueca folhada 4 queijos",
+    "rcp_img":"https://guiadacozinha.com.br/wp-content/uploads/2019/10/panqueca-folhada-4-queijos-16263.jpg",
+    "rcp_content":"Corte as massas em quandrados iguais, misture os ingredientes do recheio e recheie as porções de massa. Enrole como rocambole e coloque em uma assadeira.<br> Leve ao forno médio, preaquecido, por 15 minutos ou até dourar levemente. Retire do forno, decore como desejar e sirva acompanhada de requeijão.</br>",
+    "rcp_ingredients":"Massa folhada, queijo mussarela, queijo provolone, ricota fresca.",
+    "rcp_view":"",
+    "rcp_status":"",
+    "rcp_author":"1"
+    },
+
+    {"rcp_id":"",
+    "rcp_name":"Panqueca de queijo e presunto",
+    "rcp_img":"https://static.itdg.com.br/images/1200-675/843a111fbe724f469559a76906f61b99/355373-original.jpg",
+    "rcp_content":"No liquidificador, bata a farinha, o leite, o óleo, o ovo, o sal e o fermento. Em uma frigideira antiaderente, frite porções da massa, formando panquecas.<br> Coloque 1 fatia de presunto e 1 de mussarela sobre cada massa e enrole como rocambole. Disponha em um refratário e cubra com o molho. Leve ao forno, preaquecido, por 20 minutos.</br>",
+    "rcp_ingredients":"Farinha de trigo, leite, óleo, ovo, sal, fermento em pó, molho de tomate, presunto, queijo mussarela.",
+    "rcp_view":"",
+    "rcp_status":"",
+    "rcp_author":"2"
+    },
+
+    {"rcp_id":"",
+    "rcp_name":"Bolinho de queijo",
+    "rcp_img":"https://www.prazeresdamesa.com.br/wp-content/uploads/2018/05/empada.jpg",
+    "rcp_content":"No liquidificador, bata todos os ingredientes e coloque em forminhas para empadar untadas com óleo. Leve ao forno, preaquecido pora 30 minutos ou até dourar levemente. Retire do forno, deixe amornar, desenforme e sirva.",
+    "rcp_ingredients":"Leite, queijo parmesão, polvilho doce, óleo, sal, ovos.",
+    "rcp_view":"",
+    "rcp_status":"",
+    "rcp_author":"1"
+    },
+
+    {"rcp_id":"",
+    "rcp_name":"Panqueca de batata",
+    "rcp_img":"https://anamariabrogui.com.br/assets/uploads/receitas/fotos/usuario-2847-54a67dc81516bcd811bffd01f355cf05.jpg",
+    "rcp_content":"No liquidificador, bata todos os ingredientes por 5 minutos. Frite pequenas porções da massa em uma frigideira untada, dourando dos dois lados. Sirva com o recheio e o molho de sua preferência.",
+    "rcp_ingredients":"Ovos, cebola, sal, batata, tempero a gosto, farinha de trigo, margarina.",
+    "rcp_view":"",
+    "rcp_status":"",
+    "rcp_author":"2"
     }
 
     
