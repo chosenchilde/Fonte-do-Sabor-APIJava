@@ -20,12 +20,20 @@ public class Usuario {
 	@Column(length = 127)
 	private String user_bithdate;
 	
-	@Column(length = 127)
-	private String user_birthdate;
-	
 	@Column (length = 255)
 	private  String user_email;
 	
+	@Column(length = 255)
+	private String user_photo;
+	
+	public String getUser_photo() {
+		return user_photo;
+	}
+
+	public void setUser_photo(String user_photo) {
+		this.user_photo = user_photo;
+	}
+
 	@Column(length = 255)
 	private String user_description;
 	
@@ -62,13 +70,6 @@ public class Usuario {
 		this.user_bithdate = user_bithdate;
 	}
 
-	public String getUser_birthdate() {
-		return user_birthdate;
-	}
-
-	public void setUser_birthdate(String user_birthdate) {
-		this.user_birthdate = user_birthdate;
-	}
 
 	public String getUser_email() {
 		return user_email;
@@ -111,6 +112,6 @@ public class Usuario {
 	}
 	
 	
-	
+
 	
 }
