@@ -80,5 +80,10 @@ public class ReceitaController {
 
 	}
 
+	@GetMapping(path = "/search/{query}")
+	public List<Receita> buscaReceitas(@PathVariable String query) {
+		System.out.println(query);
+		return repository.buscaReceita(query);
+	}
 
 }
