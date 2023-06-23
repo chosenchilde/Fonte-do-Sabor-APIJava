@@ -1,6 +1,5 @@
 package com.chosenchilde.receitas.usuario;
 
-
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -12,106 +11,102 @@ public class Usuario {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long user_id;
+	private Long id;
 
 	@Column(length = 127)
-	private String user_name;
+	private String name;
 
 	@Column(length = 127)
-	private String user_bithdate;
-	
-	@Column (length = 255)
-	private  String user_email;
-	
-	@Column(length = 255)
-	private String user_photo;
-	
-	public String getUser_photo() {
-		return user_photo;
-	}
-
-	public void setUser_photo(String user_photo) {
-		this.user_photo = user_photo;
-	}
+	private String bithdate;
 
 	@Column(length = 255)
-	private String user_description;
-	
+	private String email;
+
+	@Column(length = 255)
+	private String photo;
+
+	public String getphoto() {
+		return photo;
+	}
+
+	public void setphoto(String photo) {
+		this.photo = photo;
+	}
+
+	@Column(length = 255)
+	private String description;
+
 	@Column(length = 63)
-	private String user_password;
-	
+	private String password;
+
 	@Column(length = 31)
-	private String user_type;
-	
+	private String type;
+
 	@Column(length = 31)
-	private String user_status;
+	private String status;
 
-	public Long getUser_id() {
-		return user_id;
+	public Long getid() {
+		return id;
 	}
 
-	public void setUser_id(Long user_id) {
-		this.user_id = user_id;
+	public void setid(Long id) {
+		this.id = id;
 	}
 
-	public String getUser_name() {
-		return user_name;
+	public String getname() {
+		return name;
 	}
 
-	public void setUser_name(String user_name) {
-		this.user_name = user_name;
+	public void setname(String name) {
+		this.name = name;
 	}
 
-	public String getUser_bithdate() {
-		return user_bithdate;
+	public String getbithdate() {
+		return bithdate;
 	}
 
-	public void setUser_bithdate(String user_bithdate) {
-		this.user_bithdate = user_bithdate;
+	public void setbithdate(String bithdate) {
+		this.bithdate = bithdate;
 	}
 
-
-	public String getUser_email() {
-		return user_email;
+	public String getemail() {
+		return email;
 	}
 
-	public void setUser_email(String user_email) {
-		this.user_email = user_email;
+	public void setemail(String email) {
+		this.email = email;
 	}
 
-	public String getUser_description() {
-		return user_description;
+	public String getdescription() {
+		return description;
 	}
 
-	public void setUser_description(String user_description) {
-		this.user_description = user_description;
+	public void setdescription(String description) {
+		this.description = description;
 	}
 
-	public String getUser_password() {
-		return user_password;
+	public String getpassword() {
+		return password;
 	}
 
-	public void setUser_password(String user_password) {
-		this.user_password = user_password;
+	public void setpassword(String password) {
+		this.password = password;
 	}
 
-	public String getUser_type() {
-		return user_type;
+	public String gettype() {
+		return type;
 	}
 
-	public void setUser_type(String user_type) {
-		this.user_type = user_type;
+	public void settype(String type) {
+		this.type = type;
 	}
 
-	public String getUser_status() {
-		return user_status;
+	public String getstatus() {
+		return status;
 	}
 
-	public void setUser_status(String user_status) {
-		this.user_status = user_status;
+	public void setstatus(String status) {
+		this.status = status;
 	}
-	
-	
 
-	
 }

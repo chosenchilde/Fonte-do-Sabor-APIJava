@@ -64,7 +64,7 @@ public class ReceitaController {
 
 			receita = original;
 
-			receita.setRcp_view(original.getRcp_view() + 1);
+			receita.setView(original.getView() + 1);
 
 			// Salva o registro atualizado.
 			repository.save(receita);

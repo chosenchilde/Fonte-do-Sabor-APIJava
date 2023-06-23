@@ -13,80 +13,80 @@ public class Comentarios {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long cmt_id;
+	private Long id;
 	
 	@Column(length = 127)
-	private String cmt_authorname;
+	private String authorname;
 	
 	@Column(length = 255)
-	private String cmt_authorphoto;
+	private String authorphoto;
 	
 	@Column(length = 255)
-	private String cmt_authoremail;
+	private String authoremail;
 	
 	@Column(length = 255)
-	private String cmt_uid;
+	private String uid;
 	
 	@Column(length = 127)
-	private String cmt_date;
+	private String date;
 	
 	@Column
-	private int cmt_recipe;
+	private int recipe;
 	
-	public Long getCmt_id() {
-		return cmt_id;
+	public Long getid() {
+		return id;
 	}
 
-	public void setCmt_id(Long cmt_id) {
-		this.cmt_id = cmt_id;
+	public void setid(Long id) {
+		this.id = id;
 	}
 
-	public String getCmt_authorname() {
-		return cmt_authorname;
+	public String getauthorname() {
+		return authorname;
 	}
 
-	public void setCmt_authorname(String cmt_authorname) {
-		this.cmt_authorname = cmt_authorname;
+	public void setauthorname(String authorname) {
+		this.authorname = authorname;
 	}
 
-	public String getCmt_authorphoto() {
-		return cmt_authorphoto;
+	public String getauthorphoto() {
+		return authorphoto;
 	}
 
-	public void setCmt_authorphoto(String cmt_authorphoto) {
-		this.cmt_authorphoto = cmt_authorphoto;
+	public void setauthorphoto(String authorphoto) {
+		this.authorphoto = authorphoto;
 	}
 
-	public String getCmt_authoremail() {
-		return cmt_authoremail;
+	public String getauthoremail() {
+		return authoremail;
 	}
 
-	public void setCmt_authoremail(String cmt_authoremail) {
-		this.cmt_authoremail = cmt_authoremail;
+	public void setauthoremail(String authoremail) {
+		this.authoremail = authoremail;
 	}
 
-	public String getCmt_uid() {
-		return cmt_uid;
+	public String getuid() {
+		return uid;
 	}
 
-	public void setCmt_uid(String cmt_uid) {
-		this.cmt_uid = cmt_uid;
+	public void setuid(String uid) {
+		this.uid = uid;
 	}
 
-	public String getCmt_date() {
-		return cmt_date;
+	public String getdate() {
+		return date;
 	}
 
-	public void setCmt_date(String cmt_date) {
-		this.cmt_date = cmt_date;
+	public void setdate(String date) {
+		this.date = date;
 	}
 
-	public int getCmt_recipe() {
-		return cmt_recipe;
+	public int getrecipe() {
+		return recipe;
 	}
 
-	public void setCmt_recipe(int cmt_recipe) {
-		this.cmt_recipe = cmt_recipe;
+	public void setrecipe(int recipe) {
+		this.recipe = recipe;
 	}
 
 	public String getUser_status() {
