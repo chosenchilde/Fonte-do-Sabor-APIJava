@@ -24,15 +24,7 @@ public class Usuario {
 
 	@Column(length = 255)
 	private String photo;
-
-	public String getphoto() {
-		return photo;
-	}
-
-	public void setphoto(String photo) {
-		this.photo = photo;
-	}
-
+	
 	@Column(length = 255)
 	private String description;
 
@@ -44,6 +36,15 @@ public class Usuario {
 
 	@Column(length = 31)
 	private String status;
+
+	public String getphoto() {
+		return photo;
+	}
+
+	public void setphoto(String photo) {
+		this.photo = photo;
+	}
+
 
 	public Long getid() {
 		return id;
