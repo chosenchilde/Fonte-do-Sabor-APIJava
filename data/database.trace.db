@@ -301,3 +301,6 @@ org.h2.jdbc.JdbcSQLNonTransientException: The object is already closed [90007-21
 org.h2.jdbc.JdbcSQLNonTransientException: The object is already closed [90007-214]
 2023-06-23 20:33:30 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLNonTransientException: The object is already closed [90007-214]
+2023-06-23 21:12:14 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * [*]INNER JOIN USUARIO ON RECEITA.AUTHOR = USUARIO.ID FROM RECEITA"; SQL statement:
+SELECT * INNER JOIN USUARIO ON RECEITA.AUTHOR = USUARIO.ID FROM RECEITA [42000-214]
