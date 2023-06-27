@@ -29,6 +29,11 @@ public class ReceitaController {
 		return repository.findAll();
 	}
 
+	@GetMapping("/home/{limit}")
+	public List<Receita> getByViews(@PathVariable int limit) {
+		return repository.findRecipeWithLimit(limit);
+	}
+
 	@GetMapping(path = "/{id}", produces = "application/json")
 	public String getReceita(@PathVariable Long id) throws JsonProcessingException {
 
