@@ -30,6 +30,9 @@ public class Comentarios {
 	@Column(length = 127)
 	private String date;
 	
+	@Column(length = 31)
+	private String user_status;
+	
 	@Column
 	private int recipe;
 	
@@ -97,7 +100,6 @@ public class Comentarios {
 		this.user_status = user_status;
 	}
 
-	@Column(length = 31)
-	private String user_status;
+	
 	
 }
