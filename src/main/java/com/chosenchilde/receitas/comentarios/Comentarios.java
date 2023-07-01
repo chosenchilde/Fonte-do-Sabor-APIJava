@@ -36,6 +36,17 @@ public class Comentarios {
 	@Column
 	private int recipe;
 	
+	@Column(columnDefinition = "TEXT")
+	String comment;
+	
+	public String getComment() {
+		return comment;
+	}
+
+	public void setComment(String comment) {
+		this.comment = comment;
+	}
+
 	public Long getid() {
 		return id;
 	}

@@ -17,7 +17,7 @@ public class Usuario {
 	private String name;
 
 	@Column(length = 127)
-	private String bithdate;
+	private String birthdate;
 
 	@Column(length = 255)
 	private String email;
@@ -62,12 +62,12 @@ public class Usuario {
 		this.name = name;
 	}
 
-	public String getbithdate() {
-		return bithdate;
+	public String getbirthdate() {
+		return birthdate;
 	}
 
-	public void setbithdate(String bithdate) {
-		this.bithdate = bithdate;
+	public void setbirthdate(String birthdate) {
+		this.birthdate = birthdate;
 	}
 
 	public String getemail() {
