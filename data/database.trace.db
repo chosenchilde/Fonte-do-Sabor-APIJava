@@ -1,0 +1,16 @@
+2023-07-07 21:13:04 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "USTATUS CHARACTER VARYING(3)": "'Ativo' (5)"; SQL statement:
+INSERT INTO Usuario (uid, udate, uname, uemail, upassword, uphoto, ubio, ubirth, utype, ustatus)
+VALUES
+  (1, '2023-07-07', 'Usuário 1', 'usuario1@example.com', 'senha1', 'foto1.jpg', 'Bio 1', '1990-01-01', 'Tipo 1', 'Ativo'),
+  (2, '2023-07-07', 'Usuário 2', 'usuario2@example.com', 'senha2', 'foto2.jpg', 'Bio 2', '1990-01-02', 'Tipo 2', 'Ativo'),
+  (3, '2023-07-07', 'Usuário 3', 'usuario3@example.com', 'senha3', 'foto3.jpg', 'Bio 3', '1990-01-03', 'Tipo 1', 'Inativo'),
+  (4, '2023-07-07', 'Usuário 4', 'usuario4@example.com', 'senha4', 'foto4.jpg', 'Bio 4', '1990-01-04', 'Tipo 2', 'Ativo') [22001-214]
+2023-07-07 21:13:08 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "USTATUS CHARACTER VARYING(3)": "'Ativo' (5)"; SQL statement:
+INSERT INTO usuario (uid, udate, uname, uemail, upassword, uphoto, ubio, ubirth, utype, ustatus)
+VALUES
+  (1, '2023-07-07', 'Usuário 1', 'usuario1@example.com', 'senha1', 'foto1.jpg', 'Bio 1', '1990-01-01', 'Tipo 1', 'Ativo'),
+  (2, '2023-07-07', 'Usuário 2', 'usuario2@example.com', 'senha2', 'foto2.jpg', 'Bio 2', '1990-01-02', 'Tipo 2', 'Ativo'),
+  (3, '2023-07-07', 'Usuário 3', 'usuario3@example.com', 'senha3', 'foto3.jpg', 'Bio 3', '1990-01-03', 'Tipo 1', 'Inativo'),
+  (4, '2023-07-07', 'Usuário 4', 'usuario4@example.com', 'senha4', 'foto4.jpg', 'Bio 4', '1990-01-04', 'Tipo 2', 'Ativo') [22001-214]

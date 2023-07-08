@@ -1,104 +1,119 @@
 package com.chosenchilde.receitas.receita;
 
+import com.chosenchilde.receitas.usuario.Usuario;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
 import jakarta.persistence.Lob;
+import jakarta.persistence.ManyToOne;
 
 @Entity
 public class Receita {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
+	private Long rid;
+	private String rdate;
+	
+	@ManyToOne
+	@JoinColumn(name = "rauthor")
+	private Usuario rauthor;
 
 	@Column(length = 127)
-	private String name;
+	private String rname;
 
 	@Column(length = 255)
-	private String img;
+	private String rimg;
 
 	@Lob
 	@Column(columnDefinition = "LONGTEXT", length = 65535)
-	private String content;
+	private String rcontent;
 
 	@Lob
 	@Column(columnDefinition = "LONGTEXT", length = 65535)
-	private String ingredients;
+	private String ringredients;
 
 	@Column
-	private int view;
+	private int rview;
 
 	@Column(length = 31)
-	private String status;
+	private String rstatus;
+	
 
-	@Column
-	private int author;
-
-	public Long getId() {
-		return id;
+	public Long getRid() {
+		return rid;
 	}
 
-	public void setId(Long id) {
-		this.id = id;
+	public void setRid(Long rid) {
+		this.rid = rid;
 	}
 
-	public String getName() {
-		return name;
+	public String getRname() {
+		return rname;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setRname(String rname) {
+		this.rname = rname;
 	}
 
-	public String getImg() {
-		return img;
+	public String getRimg() {
+		return rimg;
 	}
 
-	public void setImg(String img) {
-		this.img = img;
+	public void setRimg(String rimg) {
+		this.rimg = rimg;
 	}
 
-	public String getContent() {
-		return content;
+	public String getRcontent() {
+		return rcontent;
 	}
 
-	public void setContent(String content) {
-		this.content = content;
+	public void setRcontent(String rcontent) {
+		this.rcontent = rcontent;
 	}
 
-	public String getIngredients() {
-		return ingredients;
+	public String getRingredients() {
+		return ringredients;
 	}
 
-	public void setIngredients(String ingredients) {
-		this.ingredients = ingredients;
+	public void setRingredients(String ringredients) {
+		this.ringredients = ringredients;
 	}
 
-	public int getView() {
-		return view;
+	public int getRview() {
+		return rview;
 	}
 
-	public void setView(int view) {
-		this.view = view;
+	public void setRview(int rview) {
+		this.rview = rview;
 	}
 
-	public String getStatus() {
-		return status;
+	public String getRstatus() {
+		return rstatus;
 	}
 
-	public void setStatus(String status) {
-		this.status = status;
+	public void setRstatus(String rstatus) {
+		this.rstatus = rstatus;
 	}
 
-	public int getAuthor() {
-		return author;
+	public Usuario getRauthor() {
+		return rauthor;
 	}
 
-	public void setAuthor(int author) {
-		this.author = author;
+	public String getRdate() {
+		return rdate;
+	}
+
+	public void setRdate(String rdate) {
+		this.rdate = rdate;
+	}
+
+	public void setRauthor(Usuario rauthor) {
+		this.rauthor = rauthor;
 	}
 
 }

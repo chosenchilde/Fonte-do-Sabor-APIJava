@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -23,17 +24,20 @@ public class ReceitaController {
 	@Autowired
 	private ReceitaRepository repository;
 
+	// Busca todas as receitas.
 	@GetMapping
 	public List<Receita> getAll() {
 
 		return repository.findAll();
 	}
 
+	// Busca todas as receitas mais vizualizadas.
 	@GetMapping("/home/{limit}")
 	public List<Receita> getByViews(@PathVariable int limit) {
 		return repository.findRecipeWithLimit(limit);
 	}
 
+	// Busca receitas pelo id
 	@GetMapping(path = "/{id}", produces = "application/json")
 	public String getReceita(@PathVariable Long id) throws JsonProcessingException {
 
@@ -50,6 +54,7 @@ public class ReceitaController {
 		return "{ \"status\" : \"not found\" }";
 	}
 
+	// Envio de receitas ( postagem de novas receitas)
 	@PostMapping
 	public Receita post(@RequestBody Receita receita) {
 
@@ -58,37 +63,29 @@ public class ReceitaController {
 		return repository.save(receita);
 	}
 
+	// Atualiza as visualizações.
 	@PatchMapping(path = "/{id}", produces = "application/json")
-	public String updatePartial(@PathVariable Long id, @RequestBody Receita receita) throws JsonProcessingException {
-
-		// Se o registro com o Id existe.
-		if (repository.existsById(id)) {
-
-			// Obtém o registro do banco e armazena em "original".
-			Receita original = repository.findById(id).get();
-
-			receita = original;
-
-			receita.setView(original.getView() + 1);
-
-			// Salva o registro atualizado.
-			repository.save(receita);
-
-			// Retorna o registro atualizado usando o método GET.
-			// Nota: adicione "throws JsonProcessingException" ao método "updateAll()".
-			return getReceita(id);
-
-		}
-
-		// Se o registro não existe, retorna o JSON.
-		return "{ \"status\" : \"not found\" }";
-
+	public String updateViews(@PathVariable Long id) {
+		repository.updateViews(id);
+		return "{\"status\": \"success\"}";
 	}
 
+	// Busca por uma palavra ou termo específico.
 	@GetMapping(path = "/search/{query}")
 	public List<Receita> buscaReceitas(@PathVariable String query) {
-		System.out.println(query);
 		return repository.buscaReceita(query);
+	}
+
+	// Obtém as receitas do autor.
+	// Observe que a rota contém 3 parâmetros numéricos:
+	// {uid} → Id do autor da receita
+	// {rcp} → Id da receita que será excluído da listagem
+	// {lim} → Quantas receitas serão obtidas
+	// Exemplo de rota: http://domain.api/receita/author?uid=1&rcp=2&lim=5
+	@GetMapping(path = "/author")
+	public List<Receita> getByAuthor(@RequestParam("uid") Long uid, @RequestParam("rcp") Long receitaId,
+			@RequestParam("lim") int limit) {
+		return repository.findAllByAuthor(uid, receitaId, limit);
 	}
 
 }

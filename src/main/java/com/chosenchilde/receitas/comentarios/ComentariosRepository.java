@@ -8,10 +8,17 @@ import org.springframework.data.repository.query.Param;
 
 public interface ComentariosRepository extends JpaRepository<Comentarios, Long> {
 
+	final String DEFAULTPARAMS = "status = 'on'";
+	
 	// Pesquisa por comentários pelo autor, artigo e comentário.
-	@Query(value = "SELECT * FROM comments WHERE status = 'on'"
-			+ " AND uid = :uid AND receita = :art AND comment = :txt", nativeQuery = true)
+	@Query(value = "SELECT * FROM comentarios WHERE user_status = 'on'"
+			+ " AND uid = :uid AND recipe = :art AND comment = :txt", nativeQuery = true)
 	List<Comentarios> findComentariosByUsuarioAndReceita(@Param("uid") String uid, @Param("art") Long art,
 			@Param("txt") String txt);
 
+	// Salva um novo comentário.
+		@Query(value = "SELECT * FROM comentarios WHERE " + DEFAULTPARAMS
+				+ " AND recipe = :receitaId ORDER BY date DESC", nativeQuery = true)
+		List<Comentarios> findAllComentariosByReceita(@Param("receitaId") Long receitaId);
+	
 }
