@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 @CrossOrigin
 @RestController
-@RequestMapping("/users/social")
+@RequestMapping("/usuario/social")
 public class SocialController {
 
 	@Autowired

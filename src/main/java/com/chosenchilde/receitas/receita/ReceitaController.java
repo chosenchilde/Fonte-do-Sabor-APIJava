@@ -16,6 +16,8 @@ import org.springframework.web.bind.annotation.RestController;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+import net.luferat.java.demoapi1.frontendeiros.articles.Article;
+
 @CrossOrigin
 @RestController
 @RequestMapping("/receita")
@@ -27,7 +29,6 @@ public class ReceitaController {
 	// Busca todas as receitas.
 	@GetMapping
 	public List<Receita> getAll() {
-
 		return repository.findAll();
 	}
 
@@ -70,10 +71,12 @@ public class ReceitaController {
 		return "{\"status\": \"success\"}";
 	}
 
-	// Busca por uma palavra ou termo específico.
-	@GetMapping(path = "/search/{query}")
-	public List<Receita> buscaReceitas(@PathVariable String query) {
-		return repository.buscaReceita(query);
+	// Busca por uma palavra ou termo nos campos "title", "resume" e "content".
+	// As buascas são "case-insensitive". Por exemplo, para procurar por "Biscoito":
+	// GET → http://domain.api/articles/find?q=Biscoito
+	@GetMapping(path = "/search")
+	public List<Receita> findArticleByWord(@RequestParam("q") String q) {
+		return repository.findByWord(q);
 	}
 
 	// Obtém as receitas do autor.

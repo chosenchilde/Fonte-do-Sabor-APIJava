@@ -13,15 +13,11 @@ public interface ReceitaRepository extends JpaRepository<Receita, Long> {
 	
 	final String DEFAULTPARAMS = "rdate <= NOW() AND rstatus = 'on'";
 
-	// Pesquisa
-	@Query(value = "SELECT * FROM RECEITA WHERE " + DEFAULTPARAMS + " UPPER (NAME) LIKE UPPER (concat('%', :q1, '%'))  OR UPPER (CONTENT) LIKE  UPPER (concat('%', :q1, '%'))  OR  UPPER (INGREDIENTS) LIKE  UPPER (concat('%', :q1, '%'))  AND STATUS = 'on'", nativeQuery = true)
-	List<Receita> buscaReceita(@Param("q1") String q1);
-
-	// Retorna todas as receitas com limite na página inicial
-	@Query(value = "SELECT * FROM RECEITA WHERE " + DEFAULTPARAMS + " ORDER BY VIEW DESC LIMIT :limit", nativeQuery = true)
-	List<Receita> findRecipeWithLimit(@Param("limit") int limit);
+		// Retorna todas as receitas com limite na página inicial
+		@Query(value = "SELECT * FROM RECEITA WHERE " + DEFAULTPARAMS + " ORDER BY RVIEW DESC LIMIT :limit", nativeQuery = true)
+		List<Receita> findRecipeWithLimit(@Param("limit") int limit);
 	
-	// Atualiza a quantidade de views do artigo pelo Id.
+		// Atualiza a quantidade de views do artigo pelo Id.
 		@Modifying
 		@Query(value = "UPDATE receita SET rviews = rviews + 1 WHERE " 
 				+ " AND rid = :id", nativeQuery = true)
@@ -50,6 +46,11 @@ public interface ReceitaRepository extends JpaRepository<Receita, Long> {
 		// Obtém todos as receitas ordenados pela data decrescente.
 		@Query(value = "SELECT * FROM receita WHERE " + DEFAULTPARAMS + " ORDER BY rdate DESC", nativeQuery = true)
 		List<Receita> findAllValidReceitas();
+		
+		// Busca por uma palavra ou termo nos campos "title", "resume" e "content".
+		@Query(value = "SELECT * FROM receita WHERE " + DEFAULTPARAMS
+				+ " AND UPPER(rname) LIKE UPPER(CONCAT('%', :query, '%')) OR UPPER(rcontent) LIKE UPPER(CONCAT('%', :query, '%')) OR UPPER(ringredients) LIKE UPPER(CONCAT('%', :query, '%')) ORDER BY rdate DESC", nativeQuery = true)
+		List<Receita> findByWord(@Param("query") String query);
 		
 		// Busca artigos com os dados do autor.
 		@Query(value = "SELECT * FROM receita INNER JOIN usuario ON uname = uid WHERE rdate <= NOW() AND rstatus = 'on' ORDER BY rdate DESC", nativeQuery = true)
