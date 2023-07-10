@@ -9,13 +9,9 @@ import org.springframework.data.repository.query.Param;
 
 public interface UsuarioRepository extends JpaRepository<Usuario, Long>{
 
-	// Lista todos os campos, exceto 'password'.
-		final String DEFAULTFIELDS = "uid, ubio, ubirth, udate, uemail, uname, '' AS upassword, uphoto, ustatus, utype";
+	@Query(value = "SELECT * FROM usuario WHERE uid = :id", nativeQuery = true)
+	Optional<Usuario> findById(@Param("id") Long id);
 
-		@Query(value = "SELECT " + DEFAULTFIELDS + " FROM usuario WHERE uid = :id", nativeQuery = true)
-		Optional<Usuario> findById(@Param("id") Long id);
-
-		@Query(value = "SELECT " + DEFAULTFIELDS + " FROM usuario WHERE ustatus = 'on'", nativeQuery = true)
-		List<Usuario> findAllUsers();
-	
+	@Query(value = "SELECT * FROM usuario WHERE ustatus = 'on'", nativeQuery = true)
+	List<Usuario> findAllUsers();
 }

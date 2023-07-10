@@ -1,5 +1,7 @@
 package com.chosenchilde.receitas.usuario;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -15,6 +17,7 @@ public class Usuario {
 	private String udate;
 	private String uname;
 	private String uemail;
+	@JsonIgnore
 	private String upassword;
 	private String uphoto;
 	private String ubio;
