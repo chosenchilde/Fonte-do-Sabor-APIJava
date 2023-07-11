@@ -54,5 +54,5 @@ public interface ReceitaRepository extends JpaRepository<Receita, Long> {
 		
 		// Busca artigos com os dados do autor.
 		@Query(value = "SELECT * FROM receita INNER JOIN usuario ON uname = uid WHERE rdate <= NOW() AND rstatus = 'on' ORDER BY rdate DESC", nativeQuery = true)
-		List<Receita> findArticlesWithUserData();
+		List<Receita> findReceitasWithUserData();
 }

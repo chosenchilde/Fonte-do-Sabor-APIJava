@@ -16,7 +16,6 @@ import org.springframework.web.bind.annotation.RestController;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import net.luferat.java.demoapi1.frontendeiros.articles.Article;
 
 @CrossOrigin
 @RestController
@@ -72,10 +71,10 @@ public class ReceitaController {
 	}
 
 	// Busca por uma palavra ou termo nos campos "title", "resume" e "content".
-	// As buascas são "case-insensitive". Por exemplo, para procurar por "Biscoito":
-	// GET → http://domain.api/articles/find?q=Biscoito
+	// As buscas são "case-insensitive". Por exemplo, para procurar por "Biscoito":
+	// GET → http://domain.api/receita/search?q=Biscoito
 	@GetMapping(path = "/search")
-	public List<Receita> findArticleByWord(@RequestParam("q") String q) {
+	public List<Receita> findReceitaByWord(@RequestParam("q") String q) {
 		return repository.findByWord(q);
 	}
 
@@ -91,4 +90,7 @@ public class ReceitaController {
 		return repository.findAllByAuthor(uid, receitaId, limit);
 	}
 
+	
+	
+	
 }
