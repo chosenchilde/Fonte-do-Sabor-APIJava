@@ -25,19 +25,22 @@ public class ReceitaController {
 	@Autowired
 	private ReceitaRepository repository;
 
-	// Busca todas as receitas.
+	// Busca todas as receitas. Exemplo:
+	// GET → http://domain.api/receita
 	@GetMapping
 	public List<Receita> getAll() {
-		return repository.findAll();
+		return repository.findReceitasWithUserData();
 	}
 
-	// Busca todas as receitas mais vizualizadas.
+	// Busca todas as 5 receitas mais vizualizadas. Exemplo:
+	// GET → http://domain.api/receita/home/5
 	@GetMapping("/home/{limit}")
 	public List<Receita> getByViews(@PathVariable int limit) {
 		return repository.findRecipeWithLimit(limit);
 	}
 
-	// Busca receitas pelo id
+	// Busca receita pelo id. Exemplo:
+	// GET → http://localhost:8080/receita/40
 	@GetMapping(path = "/{id}", produces = "application/json")
 	public String getReceita(@PathVariable Long id) throws JsonProcessingException {
 
@@ -54,6 +57,7 @@ public class ReceitaController {
 		return "{ \"status\" : \"not found\" }";
 	}
 
+	// TESTADO OK
 	// Envio de receitas ( postagem de novas receitas)
 	@PostMapping
 	public Receita post(@RequestBody Receita receita) {
@@ -63,7 +67,9 @@ public class ReceitaController {
 		return repository.save(receita);
 	}
 
-	// Atualiza as visualizações.
+	
+	// Atualiza as visualizações. Exemplo:
+	// PATCH → http://domain.api/receita/40
 	@PatchMapping(path = "/{id}", produces = "application/json")
 	public String updateViews(@PathVariable Long id) {
 		repository.updateViews(id);

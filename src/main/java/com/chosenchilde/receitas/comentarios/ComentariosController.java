@@ -12,8 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
+
 
 @CrossOrigin
 @RestController
@@ -23,28 +22,22 @@ public class ComentariosController {
 	@Autowired
 	private ComentariosRepository repository;
 
+	
+	// Retorna todas as receitas.
 	@GetMapping
 	public List<Comentarios> getAll() {
 
 		return repository.findAll();
 	}
-
-	@GetMapping(path = "/{id}", produces = "application/json")
-	public String getComentarios(@PathVariable Long id) throws JsonProcessingException {
-
-		// Se o registro com o Id existe.
-		if (repository.existsById(id)) {
-
-			ObjectMapper mapper = new ObjectMapper();
-
-			Comentarios comentario = repository.findById(id).get();
-
-			return mapper.writeValueAsString(comentario);
-		}
-
-		return "{ \"status\" : \"not found\" }";
+  
+	// Busca os comentários da receita pelo id. Exemplo:
+	// Retorna os comentários da receitas com o id 34.
+	// GET → http://localhost:8080/comentario/34
+	@GetMapping(path = "/{receitaId}", produces = "application/json")
+	public List<Comentarios> getComentarios(@PathVariable Long receitaId) {
+		return repository.findAllComentariosByReceita(receitaId);
 	}
-
+	
 	// Post
 	@PostMapping
 	public Comentarios post(@RequestBody Comentarios comentario) {

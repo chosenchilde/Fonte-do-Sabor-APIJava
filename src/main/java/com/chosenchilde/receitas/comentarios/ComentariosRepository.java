@@ -17,8 +17,10 @@ public interface ComentariosRepository extends JpaRepository<Comentarios, Long> 
 			@Param("txt") String txt);
 
 	// Salva um novo comentário.
-		@Query(value = "SELECT * FROM comentarios WHERE " + DEFAULTPARAMS
-				+ " AND recipe = :receitaId ORDER BY date DESC", nativeQuery = true)
+		@Query(value = "SELECT * FROM comentarios WHERE recipe = :receitaId ORDER BY date DESC", nativeQuery = true)
 		List<Comentarios> findAllComentariosByReceita(@Param("receitaId") Long receitaId);
+
+
 	
 }
+
