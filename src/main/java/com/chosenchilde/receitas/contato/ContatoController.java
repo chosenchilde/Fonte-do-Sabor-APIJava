@@ -14,7 +14,7 @@ public class ContatoController {
 
 	@Autowired
 	private ContatoRepository repository;
-	
+
 	@PostMapping
 	public Contato post(@RequestBody Contato contato) {
 
@@ -22,4 +22,5 @@ public class ContatoController {
 		// e armazena o objeto nele.
 		return repository.save(contato);
 	}
+
 }

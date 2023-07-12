@@ -16,6 +16,8 @@ public class SocialController {
 	@Autowired
 	private SocialRepository repository;
 
+	// Retorna um usuário do FireBase pelo Id. Exemplo:
+	// GET → http://localhost:8080/usuario/social/1
 	@GetMapping("/{userId}")
 	public List<Social> getSocial(@PathVariable Long userId) {
 		return repository.findByUser(userId);

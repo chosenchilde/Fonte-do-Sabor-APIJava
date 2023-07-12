@@ -21,12 +21,14 @@ public class UsuarioController {
 	@Autowired
 	private UsuarioRepository repository;
 
+	// Retorna uma lista de todos os usuários.
 	@GetMapping
 	public List<Usuario> getAll() {
 		return repository.findAll();
 	}
 
-	// Get
+	// Retorna um usuário pelo id. Exemplo:
+	// GET → http://localhost:8080/usuario/1
 	@GetMapping(path = "/{id}", produces = "application/json")
 	public String getUsuario(@PathVariable Long id) throws JsonProcessingException {
 
