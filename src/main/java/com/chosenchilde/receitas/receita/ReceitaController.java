@@ -32,7 +32,7 @@ public class ReceitaController {
 		return repository.findReceitasWithUserData();
 	}
 
-	// Busca todas as 5 receitas mais vizualizadas. Exemplo:
+	// Busca todas as 5 receitas mais visualizadas. Exemplo:
 	// GET → http://domain.api/receita/home/5
 	@GetMapping("/home/{limit}")
 	public List<Receita> getByViews(@PathVariable int limit) {

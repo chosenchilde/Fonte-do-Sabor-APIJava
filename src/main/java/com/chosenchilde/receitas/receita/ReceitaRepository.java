@@ -17,7 +17,7 @@ public interface ReceitaRepository extends JpaRepository<Receita, Long> {
 	final String DEFAULTPARAMS = "rdate <= NOW() AND rstatus = 'on'";
 
 	// TESTADO OK
-	// Busca todas as 5 receitas mais vizualizadas. Exemplo:
+	// Busca todas as 5 receitas mais visualizadas. Exemplo:
 	// GET → http://domain.api/receita/home/5
 	@Query(value = "SELECT * FROM RECEITA WHERE " + DEFAULTPARAMS
 			+ " ORDER BY RVIEW DESC LIMIT :limit", nativeQuery = true)
@@ -73,7 +73,7 @@ public interface ReceitaRepository extends JpaRepository<Receita, Long> {
 	List<Receita> findByWord(@Param("query") String query);
 
 	// TESTADO OK
-	// Busca artigos com os dados do autor.
+	// Busca receitas com os dados do autor.
 	@Query(value = "SELECT * FROM receita INNER JOIN usuario ON uname = uid WHERE rdate <= NOW() AND rstatus = 'on' ORDER BY rdate DESC", nativeQuery = true)
 	List<Receita> findReceitasWithUserData();
 }
