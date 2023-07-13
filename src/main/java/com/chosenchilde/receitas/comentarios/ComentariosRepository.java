@@ -16,7 +16,7 @@ public interface ComentariosRepository extends JpaRepository<Comentarios, Long> 
 	List<Comentarios> findComentariosByUsuarioAndReceita(@Param("uid") String uid, @Param("art") Long art,
 			@Param("txt") String txt);
 
-	// Salva um novo comentário.
+	// Retorna todos os comentários de uma receita.
 		@Query(value = "SELECT * FROM comentarios WHERE recipe = :receitaId ORDER BY date DESC", nativeQuery = true)
 		List<Comentarios> findAllComentariosByReceita(@Param("receitaId") Long receitaId);
 
