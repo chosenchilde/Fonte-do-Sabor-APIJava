@@ -74,6 +74,6 @@ public interface ReceitaRepository extends JpaRepository<Receita, Long> {
 
 	// TESTADO OK
 	// Busca receitas com os dados do autor.
-	@Query(value = "SELECT * FROM receita INNER JOIN usuario ON uname = uid WHERE rdate <= NOW() AND rstatus = 'on' ORDER BY rdate DESC", nativeQuery = true)
+	@Query(value = "SELECT * FROM receita INNER JOIN usuario ON rauthor = uid WHERE rdate <= NOW() AND rstatus = 'on' ORDER BY rdate DESC", nativeQuery = true)
 	List<Receita> findReceitasWithUserData();
 }

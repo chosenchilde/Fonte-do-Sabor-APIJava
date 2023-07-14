@@ -1,5 +1,5 @@
 
-package com.chosenchilde.receitas.comentarios;
+package com.chosenchilde.receitas.comentario;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -8,9 +8,8 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
-public class Comentarios {
+public class Comentario {
  
-
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;

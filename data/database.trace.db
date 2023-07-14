@@ -1,294 +1,41 @@
-2023-07-10 21:34:15 jdbc[13]: exception
-org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO receita (rname, rimg, rcontent, ringredients, rview, rstatus, rauthor, rdate) VALUES \000d\000a( 'Pudim de Leite', 'https://assets.unileversolutions.com/recipes-v2/236947.jpg', '<h3>Pudim</h3> Primeiro, bata bem os ovos no liquidificador.<br> Acrescente o leite condensado e o leite, e bata novamente.</br><h3>Calda</h3> Derreta o açúcar na panela até ficar moreno, acrescente a água e deixe engrossar.<br>Coloque em uma forma redonda e despeje a massa do pudim por cima.</br> Asse em forno médio por 45 minutos, com a assadeira redonda dentro de uma maior com água. Espete um garfo para ver se está bem assado. Deixe esfriar e desenforme.', 'leite condensado, leite, ovos, açúcar, água', '0', 'on', '1', ''[*]2023-04-01 10:03:23');\000d\000aINSERT INTO receita (rname, rimg, rcontent, ringredients, rview, rstatus, rauthor, rdate) VALUES \000d\000a( 'Bolo de Morango', 'https://www.receitasnestle.com.br/sites/default/files/srh_recipes/9f412d6582c2ed971ecfe5295d353b68.jpg', 'Em uma batedeira, bata os ovos até dobrar de volume, acrescente o açúcar e bata bem.<br>Desligue a batedeira, misture aos poucos e delicadamente a farinha de trigo, o chocolate em pó e o fermento em pó peneirados.</br><h3>Recheio e Cobertura</h3>Separe alguns morangos para a decoração, corte em fatias o restante e reserve.<br>Em uma panela, coloque o leite condensado, o leite, e o amido de milho e leve ao fogo médio mexendo sempre até engrossar.</br>Retire do fogo, acrescente metade do chocolate e misture delicadamente até o Chocolate derreter e incorporar ao creme.<br>Acrescente o creme de leite e misture até ficar homogêneo.</br>Com uma faca serrilhada, corte a massa do bolo em duas partes, recheie com metade do creme e com os morangos fatiados, e cubra com o restante do creme.<br>Decore com o restante do chocolate ralado em ralo grosso e com os morangos inteiros reservados.</br>', 'ovos, açúcar, farinha de trigo, chocolate em pó, fermento em pó, morangos, leite condensado, leite, amido de milho, chocolate meio amargo, creme de leite.', '0', 'on', '2', ''2023-04-01 10:05:24');\000d\000aINSERT INTO receita (rname, rimg, rcontent, ringredients, rview, rstatus, rauthor, rdate) VALUES \000d\000a( 'Massa de Pizza', 'https://conteudo.imguol.com.br/c/entretenimento/ef/2022/03/09/massa-de-pizza-1646872864424_v2_4x3.jpg', 'Misture o fermento, o sal e o açúcar em um pouco de água morna, até que o fermento esteja completamente dissolvido.<br>Em seguida, adicione metade da medida de farinha de trigo, o óleo e mexa até criar uma consistência pastosa.</br>Acrescente o restante da farinha de trigo, a pinga, a água morna e misture bem. Assim que a massa desgrudar das mãos, deixe crescer por 30 minutos.</br>Abra os discos, fure a massa com um garfo e pincele o molho. Leve ao forno médio (180° C), preaquecido, por 15 minutos.</br>', 'farinha de trigo, fermento biológico, água, óleo, sal, açúcar, cachaça', '0', 'on', '1', ''2023-04-01 10:10:23');\000d\000aINSERT INTO receita (rname, rimg, rcontent, ringredients, rview, rstatus, rauthor, rdate) VALUES \000d\000a( 'Bife de Panela', 'https://img.cybercook.com.br/imagens/receitas/313/bife-de-panela.jpg', 'Coloque os bifes em uma tigela, tempere com alho, sal e pimenta-do-reino. Em uma panela, aqueça o óleo e frite os bifes até dourar os dois lados.<br>Acrescente a cebola, o tomate e o pimentão, mexendo até o pimentão amaciar. Com as mãos, esfarele o caldo de carne, junte à panela, acrescente a água quente e cozinhe por 15 minutos ou até a carne amaciar, mexendo de vez em quando.</br>Disponha a carne em um refratário e espalhe os legumes por cima. Se desejar, sirva acompanhado de arroz branco.', 'Carne tipo coxão mole, alho, sal, pimenta-do-reino, óleo, cebola, tomate, pimentão, caldo de carne, água.', '0', 'on', '2', ''2023-04-01 10:12:43');\000d\000aINSERT INTO receita (rname, rimg, rcontent, ringredients, rview, rstatus, rauthor, rdate) VALUES \000d\000a( 'Filé com Batatas', 'https://www.saboresajinomoto.com.br/uploads/images/recipes/file-com-batatas-coradas.jpg', 'Em uma tigela, tempere os filés com o azeite, a salsa picada, a cebola, o suco de limão, sal e pimenta-do-reino.<br>Em uma frigideira ou grelha, frite a carne até dourar os dois lados. Se desejar, sirva os filés acompanhados de batatas cozidas na manteiga e decorado com ervas frescas.</br>', 'Carne tipo filé mignon, azeite, cebola, limão, sal, pimenta-do-reino.', '0', 'on', '1', ''2023-04-01 13:20:10');\000d\000aINSERT INTO receita (rname, rimg, rcontent, ringredients, rview, rstatus, rauthor, rdate) VALUES \000d\000a( 'Batata recheada à bolonhesa', 'https://claudia.abril.com.br/wp-content/uploads/2020/02/receita-batata-recheada-a-bolonhesa.jpg?quality=85', 'Aqueça o forno a 200°C. Lave bem e cozinhe as batatas com a casca. Não deixe amolecer demais. Reserve.<br>Em uma panela aqueça o azeite, doure a cebola e refogue a carne moída até ficar bem sequinha. Tempere com sal e pimenta-do-reino.</br>Acrescente o molho de tomate e deixe cozinhar por mais cinco minutos. Desligue o fogo e misture o creme de leite no molho. Faça um corte no meio de cada batata, deixando 2 cm em cada extremidade.<br>Recheie com o molho, cubra coma mussarela ralada, a batata-palha e salpique a salsa. Leveao forno para gratinar por aproximadamente dez minutos. Sirva em seguida.</br>', 'Batatas, azeite, cebola, carne moida, sal, pimenta-do-reino, molho de tomate, creme de leite sem soro, mussarela, batat palha, salsa.', '0', 'on', '2', ''2023-04-01 13:44:20');\000d\000aINSERT INTO receita (rname, rimg, rcontent, ringredients, rview, rstatus, rauthor, rdate) VALUES \000d\000a( 'Lasanha caprese', 'https://claudia.abril.com.br/wp-content/uploads/2020/02/receita-lasanha-caprese.jpg?quality=85', 'Cozinha a lasanha al dente. Escorra e enxugue. Tempere o tomate com o sal, a pimenta, o azeite e o manjericão.<br>Em um refratário coloque uma camada com a metade da massa. distribua rodelas de tomate e a mussarela.</br>Por cima coloque o restante da massa e termine com uma camada de tomate e mussarela. regue com o azeite e salpique as folhas de manjericão.Leve ao forno prequecido a 220°C até a mussarela se derreter.', 'Massa de lasanha, tomate, sal, pimenta, azeite, majericão, mussarela.', '0', 'on', '1', '2023-03-01 14:30:30')"; expected "[, ::, AT, FORMAT, *, /, %, +, -, ||, NOT, IS, ILIKE, REGEXP, AND, OR, ,, )"; SQL statement:
-INSERT INTO receita (rname, rimg, rcontent, ringredients, rview, rstatus, rauthor, rdate) VALUES 
-( 'Pudim de Leite', 'https://assets.unileversolutions.com/recipes-v2/236947.jpg', '<h3>Pudim</h3> Primeiro, bata bem os ovos no liquidificador.<br> Acrescente o leite condensado e o leite, e bata novamente.</br><h3>Calda</h3> Derreta o açúcar na panela até ficar moreno, acrescente a água e deixe engrossar.<br>Coloque em uma forma redonda e despeje a massa do pudim por cima.</br> Asse em forno médio por 45 minutos, com a assadeira redonda dentro de uma maior com água. Espete um garfo para ver se está bem assado. Deixe esfriar e desenforme.', 'leite condensado, leite, ovos, açúcar, água', '0', 'on', '1', ''2023-04-01 10:03:23');
-INSERT INTO receita (rname, rimg, rcontent, ringredients, rview, rstatus, rauthor, rdate) VALUES 
-( 'Bolo de Morango', 'https://www.receitasnestle.com.br/sites/default/files/srh_recipes/9f412d6582c2ed971ecfe5295d353b68.jpg', 'Em uma batedeira, bata os ovos até dobrar de volume, acrescente o açúcar e bata bem.<br>Desligue a batedeira, misture aos poucos e delicadamente a farinha de trigo, o chocolate em pó e o fermento em pó peneirados.</br><h3>Recheio e Cobertura</h3>Separe alguns morangos para a decoração, corte em fatias o restante e reserve.<br>Em uma panela, coloque o leite condensado, o leite, e o amido de milho e leve ao fogo médio mexendo sempre até engrossar.</br>Retire do fogo, acrescente metade do chocolate e misture delicadamente até o Chocolate derreter e incorporar ao creme.<br>Acrescente o creme de leite e misture até ficar homogêneo.</br>Com uma faca serrilhada, corte a massa do bolo em duas partes, recheie com metade do creme e com os morangos fatiados, e cubra com o restante do creme.<br>Decore com o restante do chocolate ralado em ralo grosso e com os morangos inteiros reservados.</br>', 'ovos, açúcar, farinha de trigo, chocolate em pó, fermento em pó, morangos, leite condensado, leite, amido de milho, chocolate meio amargo, creme de leite.', '0', 'on', '2', ''2023-04-01 10:05:24');
-INSERT INTO receita (rname, rimg, rcontent, ringredients, rview, rstatus, rauthor, rdate) VALUES 
-( 'Massa de Pizza', 'https://conteudo.imguol.com.br/c/entretenimento/ef/2022/03/09/massa-de-pizza-1646872864424_v2_4x3.jpg', 'Misture o fermento, o sal e o açúcar em um pouco de água morna, até que o fermento esteja completamente dissolvido.<br>Em seguida, adicione metade da medida de farinha de trigo, o óleo e mexa até criar uma consistência pastosa.</br>Acrescente o restante da farinha de trigo, a pinga, a água morna e misture bem. Assim que a massa desgrudar das mãos, deixe crescer por 30 minutos.</br>Abra os discos, fure a massa com um garfo e pincele o molho. Leve ao forno médio (180° C), preaquecido, por 15 minutos.</br>', 'farinha de trigo, fermento biológico, água, óleo, sal, açúcar, cachaça', '0', 'on', '1', ''2023-04-01 10:10:23');
-INSERT INTO receita (rname, rimg, rcontent, ringredients, rview, rstatus, rauthor, rdate) VALUES 
-( 'Bife de Panela', 'https://img.cybercook.com.br/imagens/receitas/313/bife-de-panela.jpg', 'Coloque os bifes em uma tigela, tempere com alho, sal e pimenta-do-reino. Em uma panela, aqueça o óleo e frite os bifes até dourar os dois lados.<br>Acrescente a cebola, o tomate e o pimentão, mexendo até o pimentão amaciar. Com as mãos, esfarele o caldo de carne, junte à panela, acrescente a água quente e cozinhe por 15 minutos ou até a carne amaciar, mexendo de vez em quando.</br>Disponha a carne em um refratário e espalhe os legumes por cima. Se desejar, sirva acompanhado de arroz branco.', 'Carne tipo coxão mole, alho, sal, pimenta-do-reino, óleo, cebola, tomate, pimentão, caldo de carne, água.', '0', 'on', '2', ''2023-04-01 10:12:43');
-INSERT INTO receita (rname, rimg, rcontent, ringredients, rview, rstatus, rauthor, rdate) VALUES 
-( 'Filé com Batatas', 'https://www.saboresajinomoto.com.br/uploads/images/recipes/file-com-batatas-coradas.jpg', 'Em uma tigela, tempere os filés com o azeite, a salsa picada, a cebola, o suco de limão, sal e pimenta-do-reino.<br>Em uma frigideira ou grelha, frite a carne até dourar os dois lados. Se desejar, sirva os filés acompanhados de batatas cozidas na manteiga e decorado com ervas frescas.</br>', 'Carne tipo filé mignon, azeite, cebola, limão, sal, pimenta-do-reino.', '0', 'on', '1', ''2023-04-01 13:20:10');
-INSERT INTO receita (rname, rimg, rcontent, ringredients, rview, rstatus, rauthor, rdate) VALUES 
-( 'Batata recheada à bolonhesa', 'https://claudia.abril.com.br/wp-content/uploads/2020/02/receita-batata-recheada-a-bolonhesa.jpg?quality=85', 'Aqueça o forno a 200°C. Lave bem e cozinhe as batatas com a casca. Não deixe amolecer demais. Reserve.<br>Em uma panela aqueça o azeite, doure a cebola e refogue a carne moída até ficar bem sequinha. Tempere com sal e pimenta-do-reino.</br>Acrescente o molho de tomate e deixe cozinhar por mais cinco minutos. Desligue o fogo e misture o creme de leite no molho. Faça um corte no meio de cada batata, deixando 2 cm em cada extremidade.<br>Recheie com o molho, cubra coma mussarela ralada, a batata-palha e salpique a salsa. Leveao forno para gratinar por aproximadamente dez minutos. Sirva em seguida.</br>', 'Batatas, azeite, cebola, carne moida, sal, pimenta-do-reino, molho de tomate, creme de leite sem soro, mussarela, batat palha, salsa.', '0', 'on', '2', ''2023-04-01 13:44:20');
-INSERT INTO receita (rname, rimg, rcontent, ringredients, rview, rstatus, rauthor, rdate) VALUES 
-( 'Lasanha caprese', 'https://claudia.abril.com.br/wp-content/uploads/2020/02/receita-lasanha-caprese.jpg?quality=85', 'Cozinha a lasanha al dente. Escorra e enxugue. Tempere o tomate com o sal, a pimenta, o azeite e o manjericão.<br>Em um refratário coloque uma camada com a metade da massa. distribua rodelas de tomate e a mussarela.</br>Por cima coloque o restante da massa e termine com uma camada de tomate e mussarela. regue com o azeite e salpique as folhas de manjericão.Leve ao forno prequecido a 220°C até a mussarela se derreter.', 'Massa de lasanha, tomate, sal, pimenta, azeite, majericão, mussarela.', '0', 'on', '1', '2023-03-01 14:30:30') [42001-214]
-2023-07-11 18:08:01 database: wrong user or password; user: "SA"
-org.h2.message.DbException: Wrong user name or password [28000-214]
-	at org.h2.message.DbException.get(DbException.java:223)
-	at org.h2.message.DbException.get(DbException.java:199)
-	at org.h2.message.DbException.get(DbException.java:188)
-	at org.h2.engine.Engine.openSession(Engine.java:154)
-	at org.h2.engine.Engine.openSession(Engine.java:222)
-	at org.h2.engine.Engine.createSession(Engine.java:201)
-	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
-	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
-	at org.h2.util.JdbcUtils.getConnection(JdbcUtils.java:288)
-	at org.h2.server.web.WebServer.getConnection(WebServer.java:808)
-	at org.h2.server.web.WebApp.login(WebApp.java:1033)
-	at org.h2.server.web.WebApp.process(WebApp.java:226)
-	at org.h2.server.web.WebApp.processRequest(WebApp.java:176)
-	at org.h2.server.web.JakartaWebServlet.doGet(JakartaWebServlet.java:129)
-	at org.h2.server.web.JakartaWebServlet.doPost(JakartaWebServlet.java:166)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: org.h2.jdbc.JdbcSQLInvalidAuthorizationSpecException: Wrong user name or password [28000-214]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:510)
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
-	... 50 more
-2023-07-11 18:32:49 jdbc[13]: exception
-org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT CASE WHEN COUNT(rid) > 0 THEN true ELSE false END FROM receita WHERE "" rdate <= NOW() AND rstatus = 'on' "" AND rid = [*]:id"; expected "ALL (, ANY (, SOME ("; SQL statement:
-SELECT CASE WHEN COUNT(rid) > 0 THEN true ELSE false END FROM receita WHERE " rdate <= NOW() AND rstatus = 'on' " AND rid = :id [42001-214]
-2023-07-11 18:33:04 jdbc[13]: exception
-org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT CASE WHEN COUNT(rid) > 0 THEN true ELSE false END FROM receita WHERE [*]""rdate <= NOW() AND rstatus = 'on'  AND rid = :id"; SQL statement:
-SELECT CASE WHEN COUNT(rid) > 0 THEN true ELSE false END FROM receita WHERE "rdate <= NOW() AND rstatus = 'on'  AND rid = :id [42000-214]
-2023-07-11 18:37:14 jdbc[3]: exception
-org.h2.jdbc.JdbcSQLNonTransientException: The object is already closed [90007-214]
-2023-07-11 19:10:21 jdbc[24]: exception
-org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "Aqui está um exemplo de comando SQL para inserir 4 registros na tabela ""Comentarios"" com os campos mencionados:\000d\000a\000d\000a[*]```sql\000d\000aINSERT INTO Comentarios (id, authorname, authorphoto, authoremail, uid, date, user_status, recipe, comment)\000d\000aVALUES\000d\000a  (1, 'João', 'foto1.jpg', 'joao@example.com', 1, '2023-07-07', 'on', 'Bolo de Chocolate', 'Esse bolo é delicioso! Recomendo.'),\000d\000a  (2, 'Maria', 'foto2.jpg', 'maria@example.com', 2, '2023-07-07', 'on', 'Lasanha de Frango', 'Adorei essa receita! Fácil de fazer e muito saborosa.'),\000d\000a  (3, 'Pedro', 'foto3.jpg', 'pedro@example.com', 3, '2023-07-07', 'on', 'Pudim de Leite Condensado', 'Essa sobremesa é simplesmente incrível! Não consigo parar de comer.'),\000d\000a  (4, 'Ana', 'foto4.jpg', 'ana@example.com', 4, '2023-07-07', 'on', 'Torta de Maçã', 'Essa torta é uma ótima opção para sobremesa. Todos aqui em casa adoraram.')"; SQL statement:
-Aqui está um exemplo de comando SQL para inserir 4 registros na tabela "Comentarios" com os campos mencionados:
-
-```sql
-INSERT INTO Comentarios (id, authorname, authorphoto, authoremail, uid, date, user_status, recipe, comment)
-VALUES
-  (1, 'João', 'foto1.jpg', 'joao@example.com', 1, '2023-07-07', 'on', 'Bolo de Chocolate', 'Esse bolo é delicioso! Recomendo.'),
-  (2, 'Maria', 'foto2.jpg', 'maria@example.com', 2, '2023-07-07', 'on', 'Lasanha de Frango', 'Adorei essa receita! Fácil de fazer e muito saborosa.'),
-  (3, 'Pedro', 'foto3.jpg', 'pedro@example.com', 3, '2023-07-07', 'on', 'Pudim de Leite Condensado', 'Essa sobremesa é simplesmente incrível! Não consigo parar de comer.'),
-  (4, 'Ana', 'foto4.jpg', 'ana@example.com', 4, '2023-07-07', 'on', 'Torta de Maçã', 'Essa torta é uma ótima opção para sobremesa. Todos aqui em casa adoraram.') [42000-214]
-2023-07-11 19:10:21 jdbc[24]: exception
-org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]```\000d\000a\000d\000aCertifique-se de ajustar os valores dos campos de acordo com as informações que você deseja inserir na tabela. Lembre-se também de verificar se os nomes dos campos e o nome da tabela estão corretos em seu banco de dados."; SQL statement:
-```
-
-Certifique-se de ajustar os valores dos campos de acordo com as informações que você deseja inserir na tabela. Lembre-se também de verificar se os nomes dos campos e o nome da tabela estão corretos em seu banco de dados. [42000-214]
-2023-07-11 19:10:37 jdbc[24]: exception
-org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'Bolo de Chocolate' (COMENTARIOS: ""RECIPE"" INTEGER)"; SQL statement:
-INSERT INTO Comentarios (id, authorname, authorphoto, authoremail, uid, date, user_status, recipe, comment)
-VALUES
-  (1, 'João', 'foto1.jpg', 'joao@example.com', 1, '2023-07-07', 'on', 'Bolo de Chocolate', 'Esse bolo é delicioso! Recomendo.'),
-  (2, 'Maria', 'foto2.jpg', 'maria@example.com', 2, '2023-07-07', 'on', 'Lasanha de Frango', 'Adorei essa receita! Fácil de fazer e muito saborosa.'),
-  (3, 'Pedro', 'foto3.jpg', 'pedro@example.com', 3, '2023-07-07', 'on', 'Pudim de Leite Condensado', 'Essa sobremesa é simplesmente incrível! Não consigo parar de comer.'),
-  (4, 'Ana', 'foto4.jpg', 'ana@example.com', 4, '2023-07-07', 'on', 'Torta de Maçã', 'Essa torta é uma ótima opção para sobremesa. Todos aqui em casa adoraram.') [22018-214]
-2023-07-11 19:11:39 jdbc[24]: exception
-org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'Bolo de Chocolate' (COMENTARIOS: ""RECIPE"" INTEGER)"; SQL statement:
-INSERT INTO Comentarios (id, authorname, authorphoto, authoremail, uid, date, user_status, recipe, comment)
-VALUES
-  (1, 'João', 'foto1.jpg', 'joao@example.com', 1, '2023-07-07', 'on', 'Bolo de Chocolate', 'Esse bolo é delicioso! Recomendo.'),
-  (2, 'Maria', 'foto2.jpg', 'maria@example.com', 2, '2023-07-07', 'on', 'Lasanha de Frango', 'Adorei essa receita! Fácil de fazer e muito saborosa.'),
-  (3, 'Pedro', 'foto3.jpg', 'pedro@example.com', 3, '2023-07-07', 'on', 'Pudim de Leite Condensado', 'Essa sobremesa é simplesmente incrível! Não consigo parar de comer.'),
-  (4, 'Ana', 'foto4.jpg', 'ana@example.com', 4, '2023-07-07', 'on', 'Torta de Maçã', 'Essa torta é uma ótima opção para sobremesa. Todos aqui em casa adoraram.') [22018-214]
-2023-07-11 19:13:28 jdbc[25]: null
-org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-214]
-	at org.h2.message.DbException.get(DbException.java:223)
-	at org.h2.message.DbException.get(DbException.java:199)
-	at org.h2.message.DbException.get(DbException.java:188)
-	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:190)
-	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:132)
-	at org.h2.Driver.connect(Driver.java:59)
-	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
-	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
-	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
-	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
-	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:733)
-	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:712)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: The connection was not closed by the application and is garbage collected [90018-214]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:678)
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
-	... 16 more
-2023-07-11 19:16:52 jdbc[24]: exception
-org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'Bolo de Chocolate' (COMENTARIOS: ""RECIPE"" INTEGER)"; SQL statement:
-INSERT INTO Comentarios (id, authorname, authorphoto, authoremail, uid, date, user_status, recipe, comment)
-VALUES
-  (1, 'João', 'foto1.jpg', 'joao@example.com', 1, '2023-07-07', 'on', 'Bolo de Chocolate', 'Esse bolo é delicioso! Recomendo.'),
-  (2, 'Maria', 'foto2.jpg', 'maria@example.com', 2, '2023-07-07', 'on', 'Lasanha de Frango', 'Adorei essa receita! Fácil de fazer e muito saborosa.'),
-  (3, 'Pedro', 'foto3.jpg', 'pedro@example.com', 3, '2023-07-07', 'on', 'Pudim de Leite Condensado', 'Essa sobremesa é simplesmente incrível! Não consigo parar de comer.'),
-  (4, 'Ana', 'foto4.jpg', 'ana@example.com', 4, '2023-07-07', 'on', 'Torta de Maçã', 'Essa torta é uma ótima opção para sobremesa. Todos aqui em casa adoraram.') [22018-214]
-2023-07-11 19:32:38 jdbc[3]: exception
-org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "STATUS" not found; SQL statement:
-SELECT * FROM comentarios WHERE status = 'on' AND recipe = ? ORDER BY date DESC [42122-214]
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
-	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
-	at org.h2.message.DbException.get(DbException.java:223)
-	at org.h2.message.DbException.get(DbException.java:199)
-	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:244)
-	at org.h2.expression.ExpressionColumn.optimizeOther(ExpressionColumn.java:226)
-	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:213)
-	at org.h2.expression.condition.Comparison.optimize(Comparison.java:139)
-	at org.h2.expression.condition.ConditionAndOr.optimize(ConditionAndOr.java:136)
-	at org.h2.expression.Expression.optimizeCondition(Expression.java:148)
-	at org.h2.command.query.Select.prepareExpressions(Select.java:1177)
-	at org.h2.command.query.Query.prepare(Query.java:218)
-	at org.h2.command.Parser.prepareCommand(Parser.java:575)
-	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
-	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
-	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
-	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
-	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:288)
-	at com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:327)
-	at com.zaxxer.hikari.pool.HikariProxyConnection.prepareStatement(HikariProxyConnection.java)
-	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$1.doPrepare(StatementPreparerImpl.java:91)
-	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:177)
-	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl.prepareStatement(StatementPreparerImpl.java:76)
-	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.lambda$list$0(JdbcSelectExecutorStandardImpl.java:102)
-	at org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess.executeQuery(DeferredResultSetAccess.java:226)
-	at org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess.getResultSet(DeferredResultSetAccess.java:163)
-	at org.hibernate.sql.results.jdbc.internal.AbstractResultSetAccess.getMetaData(AbstractResultSetAccess.java:36)
-	at org.hibernate.sql.results.jdbc.internal.AbstractResultSetAccess.getColumnCount(AbstractResultSetAccess.java:52)
-	at org.hibernate.query.results.ResultSetMappingImpl.resolve(ResultSetMappingImpl.java:193)
-	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.resolveJdbcValuesSource(JdbcSelectExecutorStandardImpl.java:478)
-	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.doExecuteQuery(JdbcSelectExecutorStandardImpl.java:267)
-	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.executeQuery(JdbcSelectExecutorStandardImpl.java:168)
-	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.list(JdbcSelectExecutorStandardImpl.java:93)
-	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.list(JdbcSelectExecutor.java:31)
-	at org.hibernate.query.sql.internal.NativeSelectQueryPlanImpl.performList(NativeSelectQueryPlanImpl.java:97)
-	at org.hibernate.query.sql.internal.NativeQueryImpl.doList(NativeQueryImpl.java:621)
-	at org.hibernate.query.spi.AbstractSelectionQuery.list(AbstractSelectionQuery.java:367)
-	at org.hibernate.query.Query.getResultList(Query.java:119)
-	at org.springframework.data.jpa.repository.query.JpaQueryExecution$CollectionExecution.doExecute(JpaQueryExecution.java:129)
-	at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:92)
-	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:148)
-	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:136)
-	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:136)
-	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:120)
-	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:164)
-	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:143)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
-	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:77)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
-	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:391)
-	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
-	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
-	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:134)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
-	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
-	at jdk.proxy2/jdk.proxy2.$Proxy116.findAllComentariosByReceita(Unknown Source)
-	at com.chosenchilde.receitas.comentarios.ComentariosController.getComentarios(ComentariosController.java:37)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-2023-07-13 21:26:10 jdbc[13]: exception
-org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO Usuario (uid, udate, uname, uemail, upassword, uphoto, ubio, ubirth, utype, ustatus)\000d\000a\000d\000aVALUES\000d\000a\000d\000a(1, '2023-07-07', 'Joanir', 'usuario1@example.com', 'senha1', '/images/users/foto_1.jpg', 'Sou um experimentador de sabores!', '1990-01-01', 'Autor', 'on'),\000d\000a\000d\000a(2, '2023-07-07', 'Joaquim', 'usuario2@example.com', 'senha2', '/images/users/foto_2.jpg', 'Amante da gastronomia italiana.', '1990-01-02', 'Administrador', 'on'),\000d\000a\000d\000a(3, '2023-07-07', 'Joca', 'usuario3@example.com', 'senha3', '/images/users/foto_3.jpg', 'Explorando pratos vegetarianos e veganos., '[*]1990-01-03', 'Autor', 'on'),\000d\000a\000d\000a(4, '2023-07-07', 'Renata', 'usuario4@example.com', 'senha4', ''/images/users/foto_4.jpg', 'Apaixonada por doces e sobremesas.', '1990-01-04', 'Autor', 'on')"; expected "[, ::, AT, FORMAT, *, /, %, +, -, ||, NOT, IS, ILIKE, REGEXP, AND, OR, ,, )"; SQL statement:
-INSERT INTO Usuario (uid, udate, uname, uemail, upassword, uphoto, ubio, ubirth, utype, ustatus)
-
-VALUES
-
-(1, '2023-07-07', 'Joanir', 'usuario1@example.com', 'senha1', '/images/users/foto_1.jpg', 'Sou um experimentador de sabores!', '1990-01-01', 'Autor', 'on'),
-
-(2, '2023-07-07', 'Joaquim', 'usuario2@example.com', 'senha2', '/images/users/foto_2.jpg', 'Amante da gastronomia italiana.', '1990-01-02', 'Administrador', 'on'),
-
-(3, '2023-07-07', 'Joca', 'usuario3@example.com', 'senha3', '/images/users/foto_3.jpg', 'Explorando pratos vegetarianos e veganos., '1990-01-03', 'Autor', 'on'),
-
-(4, '2023-07-07', 'Renata', 'usuario4@example.com', 'senha4', ''/images/users/foto_4.jpg', 'Apaixonada por doces e sobremesas.', '1990-01-04', 'Autor', 'on') [42001-214]
-2023-07-13 21:26:21 jdbc[14]: exception
-org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO Usuario (uid, udate, uname, uemail, upassword, uphoto, ubio, ubirth, utype, ustatus)\000d\000a\000d\000aVALUES\000d\000a\000d\000a(1, '2023-07-07', 'Joanir', 'usuario1@example.com', 'senha1', '/images/users/foto_1.jpg', 'Sou um experimentador de sabores!', '1990-01-01', 'Autor', 'on'),\000d\000a\000d\000a(2, '2023-07-07', 'Joaquim', 'usuario2@example.com', 'senha2', '/images/users/foto_2.jpg', 'Amante da gastronomia italiana.', '1990-01-02', 'Administrador', 'on'),\000d\000a\000d\000a(3, '2023-07-07', 'Joca', 'usuario3@example.com', 'senha3', '/images/users/foto_3.jpg', 'Explorando pratos vegetarianos e veganos., '[*]1990-01-03', 'Autor', 'on'),\000d\000a\000d\000a(4, '2023-07-07', 'Renata', 'usuario4@example.com', 'senha4', ''/images/users/foto_4.jpg', 'Apaixonada por doces e sobremesas.', '1990-01-04', 'Autor', 'on')"; expected "[, ::, AT, FORMAT, *, /, %, +, -, ||, NOT, IS, ILIKE, REGEXP, AND, OR, ,, )"; SQL statement:
-INSERT INTO Usuario (uid, udate, uname, uemail, upassword, uphoto, ubio, ubirth, utype, ustatus)
-
-VALUES
-
-(1, '2023-07-07', 'Joanir', 'usuario1@example.com', 'senha1', '/images/users/foto_1.jpg', 'Sou um experimentador de sabores!', '1990-01-01', 'Autor', 'on'),
-
-(2, '2023-07-07', 'Joaquim', 'usuario2@example.com', 'senha2', '/images/users/foto_2.jpg', 'Amante da gastronomia italiana.', '1990-01-02', 'Administrador', 'on'),
-
-(3, '2023-07-07', 'Joca', 'usuario3@example.com', 'senha3', '/images/users/foto_3.jpg', 'Explorando pratos vegetarianos e veganos., '1990-01-03', 'Autor', 'on'),
-
-(4, '2023-07-07', 'Renata', 'usuario4@example.com', 'senha4', ''/images/users/foto_4.jpg', 'Apaixonada por doces e sobremesas.', '1990-01-04', 'Autor', 'on') [42001-214]
-2023-07-13 21:27:09 jdbc[14]: exception
-org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO Usuario (uid, udate, uname, uemail, upassword, uphoto, ubio, ubirth, utype, ustatus)\000d\000a\000d\000aVALUES\000d\000a\000d\000a(1, '2023-07-07', 'Joanir', 'usuario1@example.com', 'senha1', '/images/users/foto_1.jpg', 'Sou um experimentador de sabores!', '1990-01-01', 'Autor', 'on'),\000d\000a\000d\000a(2, '2023-07-07', 'Joaquim', 'usuario2@example.com', 'senha2', '/images/users/foto_2.jpg', 'Amante da gastronomia italiana.', '1990-01-02', 'Administrador', 'on'),\000d\000a\000d\000a(3, '2023-07-07', 'Joca', 'usuario3@example.com', 'senha3', '/images/users/foto_3.jpg', 'Explorando pratos vegetarianos e veganos.', '1990-01-03', 'Autor', 'on'),\000d\000a\000d\000a(4, '2023-07-07', 'Renata', 'usuario4@example.com', 'senha4', ''/images/users/foto_4.jpg', 'Apaixonada por doces e sobremesas.', '1990-01-04', 'Autor', 'on[*]');"; SQL statement:
-INSERT INTO Usuario (uid, udate, uname, uemail, upassword, uphoto, ubio, ubirth, utype, ustatus)
-
-VALUES
-
-(1, '2023-07-07', 'Joanir', 'usuario1@example.com', 'senha1', '/images/users/foto_1.jpg', 'Sou um experimentador de sabores!', '1990-01-01', 'Autor', 'on'),
-
-(2, '2023-07-07', 'Joaquim', 'usuario2@example.com', 'senha2', '/images/users/foto_2.jpg', 'Amante da gastronomia italiana.', '1990-01-02', 'Administrador', 'on'),
-
-(3, '2023-07-07', 'Joca', 'usuario3@example.com', 'senha3', '/images/users/foto_3.jpg', 'Explorando pratos vegetarianos e veganos.', '1990-01-03', 'Autor', 'on'),
-
-(4, '2023-07-07', 'Renata', 'usuario4@example.com', 'senha4', ''/images/users/foto_4.jpg', 'Apaixonada por doces e sobremesas.', '1990-01-04', 'Autor', 'on'); [42000-214]
+2023-07-14 19:32:39 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMENTARIOS" not found; SQL statement:
+INSERT INTO Comentarios (id, authorname, authorphoto, authoremail, uid, date, user_status, recipe, comment) VALUES
+  (1, 'João', 'foto1.jpg', 'joao@example.com', '1', '2023-07-07', 'on',34, 'Esse bolo é delicioso! Recomendo.'),
+  (2, 'Maria', 'foto2.jpg', 'maria@example.com', '2', '2023-07-07', 'on', 34, 'Adorei essa receita! Fácil de fazer e muito saborosa.'),
+  (3, 'Pedro', 'foto3.jpg', 'pedro@example.com', '3', '2023-07-07', 'on', 35, 'Essa sobremesa é simplesmente incrível! Não consigo parar de comer.'),
+  (4, 'Ana', 'foto4.jpg', 'ana@example.com', '4', '2023-07-07', 'on', 34, 'Essa torta é uma ótima opção para sobremesa. Todos aqui em casa adoraram.') [42102-214]
+2023-07-14 19:33:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "joanir"; SQL statement:
+SELECT * FROM receita INNER JOIN usuario ON uname = uid WHERE rdate <= NOW() AND rstatus = 'on' ORDER BY rdate DESC [22018-214]
+2023-07-14 19:34:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "joanir"; SQL statement:
+SELECT * FROM receita INNER JOIN usuario ON uname = uid WHERE rdate <= NOW() AND rstatus = 'on' ORDER BY rdate DESC [22018-214]
+2023-07-14 19:34:44 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "joanir"; SQL statement:
+SELECT
+        * 
+    FROM
+        receita 
+    INNER JOIN
+        usuario 
+            ON uname = uid 
+    WHERE
+        rdate <= NOW() 
+        AND rstatus = 'on' 
+    ORDER BY
+        rdate DESC [22018-214]
+2023-07-14 19:35:59 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "joanir"; SQL statement:
+SELECT
+        * 
+    FROM
+        receita 
+    INNER JOIN
+        usuario 
+            ON uname = uid 
+    WHERE
+        rdate <= NOW() 
+        AND rstatus = 'on' 
+    ORDER BY
+        rdate DESC [22018-214]

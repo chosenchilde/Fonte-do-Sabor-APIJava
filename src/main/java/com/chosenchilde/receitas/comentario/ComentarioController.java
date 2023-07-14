@@ -1,4 +1,4 @@
-package com.chosenchilde.receitas.comentarios;
+package com.chosenchilde.receitas.comentario;
 
 import java.util.List;
 
@@ -12,29 +12,25 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-
-
 @CrossOrigin
 @RestController
 @RequestMapping("/comentario")
-public class ComentariosController {
+public class ComentarioController {
 
 	@Autowired
-	private ComentariosRepository repository;
-
-	
+	private ComentarioRepository repository;
 
 	// Busca os comentários da receita pelo id. Exemplo:
 	// Retorna os comentários da receitas com o id 34.
 	// GET → http://localhost:8080/comentario/34
 	@GetMapping(path = "/{receitaId}", produces = "application/json")
-	public List<Comentarios> getComentarios(@PathVariable Long receitaId) {
+	public List<Comentario> getComentarios(@PathVariable Long receitaId) {
 		return repository.findAllComentariosByReceita(receitaId);
 	}
-	
+
 	// salva um novo comentário.
 	@PostMapping
-	public Comentarios post(@RequestBody Comentarios comentario) {
+	public Comentario post(@RequestBody Comentario comentario) {
 
 		// O método "save()" de JPA cria um novo registro
 		// e armazena o objeto nele.
@@ -52,7 +48,7 @@ public class ComentariosController {
 	// Texto do comentário = "Comentário do usuário"
 	// Serve para evitar que um mesmo comentário seja enviado de forma repetida.
 	@GetMapping(path = "/find")
-	public List<Comentarios> alreadyExists(@RequestParam("uid") String uid, @RequestParam("art") Long art,
+	public List<Comentario> alreadyExists(@RequestParam("uid") String uid, @RequestParam("art") Long art,
 			@RequestParam("txt") String txt) {
 		return repository.findComentariosByUsuarioAndReceita(uid, art, txt);
 	}

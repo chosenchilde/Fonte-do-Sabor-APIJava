@@ -1,3 +1,9 @@
+INSERT INTO Usuario (uid, udate, uname, uemail, upassword, uphoto, ubio, ubirth, utype, ustatus) VALUES
+(1, '2023-07-07', 'joanir', 'usuario1@example.com', 'senha1', '/images/users/foto_1.jpg', 'Bio 1', '1990-01-01', 'Autor', 'on'),
+(2, '2023-07-07', 'joaquim', 'usuario2@example.com', 'senha2', '/images/users/foto_2.jpg', 'Bio 2', '1990-01-02', 'Administrador', 'on'),
+(3, '2023-07-07', 'Joca', 'usuario3@example.com', 'senha3', '/images/users/foto_3.jpg', 'Bio 3', '1990-01-03', 'Autor', 'on'),
+(4, '2023-07-07', 'joanesvaldo', 'usuario4@example.com', 'senha4', '/images/users/foto_4.jpg', 'Bio 4', '1990-01-04', 'Autor', 'on');
+
 INSERT INTO receita (rname, rimg, rcontent, ringredients, rview, rstatus, rauthor, rdate) VALUES 
 ( 'Pudim de Leite', 'https://assets.unileversolutions.com/recipes-v2/236947.jpg', '<h3>Pudim</h3> Primeiro, bata bem os ovos no liquidificador.<br> Acrescente o leite condensado e o leite, e bata novamente.</br><h3>Calda</h3> Derreta o açúcar na panela até ficar moreno, acrescente a água e deixe engrossar.<br>Coloque em uma forma redonda e despeje a massa do pudim por cima.</br> Asse em forno médio por 45 minutos, com a assadeira redonda dentro de uma maior com água. Espete um garfo para ver se está bem assado. Deixe esfriar e desenforme.', 'leite condensado, leite, ovos, açúcar, água', '0', 'on', '1', '2023-04-01 10:03:23');
 INSERT INTO receita (rname, rimg, rcontent, ringredients, rview, rstatus, rauthor, rdate) VALUES 
@@ -38,3 +44,16 @@ INSERT INTO receita (rname, rimg, rcontent, ringredients, rview, rstatus, rautho
 ( 'Bolinho de queijo', 'https://www.prazeresdamesa.com.br/wp-content/uploads/2018/05/empada.jpg', 'No liquidificador, bata todos os ingredientes e coloque em forminhas para empadar untadas com óleo. Leve ao forno, preaquecido pora 30 minutos ou até dourar levemente. Retire do forno, deixe amornar, desenforme e sirva.', 'Leite, queijo parmesão, polvilho doce, óleo, sal, ovos.', '0', 'on', '1', '2023-05-01 10:25:17');
 INSERT INTO receita (rname, rimg, rcontent, ringredients, rview, rstatus, rauthor, rdate) VALUES 
 ( 'Panqueca de batata', 'https://anamariabrogui.com.br/assets/uploads/receitas/fotos/usuario-2847-54a67dc81516bcd811bffd01f355cf05.jpg', 'No liquidificador, bata todos os ingredientes por 5 minutos. Frite pequenas porções da massa em uma frigideira untada, dourando dos dois lados. Sirva com o recheio e o molho de sua preferência.', 'Ovos, cebola, sal, batata, tempero a gosto, farinha de trigo, margarina.', '0', 'on', '2', '2023-06-01 10:23:17');
+
+INSERT INTO Contato (id, status, nome, email, assunto, mensagem) VALUES
+  (1, 'Pendente', 'João', 'joao@example.com', 'Dúvida sobre o produto', 'Olá, gostaria de obter mais informações sobre o produto X.'),
+  (2, 'Respondido', 'Maria', 'maria@example.com', 'Feedback sobre o serviço', 'Gostaria de deixar um feedback positivo sobre o serviço prestado. Estou muito satisfeita.'),
+  (3, 'Respondido', 'Pedro', 'pedro@example.com', 'Problema com a entrega', 'Infelizmente, o produto que comprei ainda não foi entregue. Gostaria de saber o status da entrega.'),
+  (4, 'Pendente', 'Ana', 'ana@example.com', 'Solicitação de orçamento', 'Gostaria de solicitar um orçamento para o serviço de manutenção.');
+
+INSERT INTO Comentario (id, authorname, authorphoto, authoremail, uid, date, user_status, recipe, comment) VALUES
+  (1, 'João', 'foto1.jpg', 'joao@example.com', '1', '2023-07-07', 'on',34, 'Esse bolo é delicioso! Recomendo.'),
+  (2, 'Maria', 'foto2.jpg', 'maria@example.com', '2', '2023-07-07', 'on', 34, 'Adorei essa receita! Fácil de fazer e muito saborosa.'),
+  (3, 'Pedro', 'foto3.jpg', 'pedro@example.com', '3', '2023-07-07', 'on', 35, 'Essa sobremesa é simplesmente incrível! Não consigo parar de comer.'),
+  (4, 'Ana', 'foto4.jpg', 'ana@example.com', '4', '2023-07-07', 'on', 34, 'Essa torta é uma ótima opção para sobremesa. Todos aqui em casa adoraram.');
+
