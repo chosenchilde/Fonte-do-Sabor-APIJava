@@ -1,14 +1,41 @@
-2023-06-21 19:59:03 jdbc[13]: exception
-org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * [*]FROCOMENTARIOS  COMENTARIOS COMENTARIOS  USUARIO"; SQL statement:
-SELECT * FROCOMENTARIOS  COMENTARIOS COMENTARIOS  USUARIO [42000-214]
-2023-06-21 19:59:04 jdbc[13]: exception
-org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * [*]FROCOMENTARIOS  COMENTARIOS COMENTARIOS  USUARIO"; SQL statement:
-SELECT * FROCOMENTARIOS  COMENTARIOS COMENTARIOS  USUARIO [42000-214]
-2023-06-21 19:59:25 jdbc[13]: exception
-org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]SELEC * FROM COMENTARIOS"; expected "SAVEPOINT, SCRIPT, SHUTDOWN, SHOW"; SQL statement:
-SELEC * FROM COMENTARIOS [42001-214]
-2023-06-21 19:59:27 jdbc[13]: exception
-org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]SELEC * FROM COMENTARIOS"; expected "SAVEPOINT, SCRIPT, SHUTDOWN, SHOW"; SQL statement:
-SELEC * FROM COMENTARIOS [42001-214]
-2023-06-21 20:11:01 jdbc[3]: exception
-org.h2.jdbc.JdbcSQLNonTransientException: The object is already closed [90007-214]
+2023-07-14 19:32:39 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COMENTARIOS" not found; SQL statement:
+INSERT INTO Comentarios (id, authorname, authorphoto, authoremail, uid, date, user_status, recipe, comment) VALUES
+  (1, 'João', 'foto1.jpg', 'joao@example.com', '1', '2023-07-07', 'on',34, 'Esse bolo é delicioso! Recomendo.'),
+  (2, 'Maria', 'foto2.jpg', 'maria@example.com', '2', '2023-07-07', 'on', 34, 'Adorei essa receita! Fácil de fazer e muito saborosa.'),
+  (3, 'Pedro', 'foto3.jpg', 'pedro@example.com', '3', '2023-07-07', 'on', 35, 'Essa sobremesa é simplesmente incrível! Não consigo parar de comer.'),
+  (4, 'Ana', 'foto4.jpg', 'ana@example.com', '4', '2023-07-07', 'on', 34, 'Essa torta é uma ótima opção para sobremesa. Todos aqui em casa adoraram.') [42102-214]
+2023-07-14 19:33:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "joanir"; SQL statement:
+SELECT * FROM receita INNER JOIN usuario ON uname = uid WHERE rdate <= NOW() AND rstatus = 'on' ORDER BY rdate DESC [22018-214]
+2023-07-14 19:34:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "joanir"; SQL statement:
+SELECT * FROM receita INNER JOIN usuario ON uname = uid WHERE rdate <= NOW() AND rstatus = 'on' ORDER BY rdate DESC [22018-214]
+2023-07-14 19:34:44 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "joanir"; SQL statement:
+SELECT
+        * 
+    FROM
+        receita 
+    INNER JOIN
+        usuario 
+            ON uname = uid 
+    WHERE
+        rdate <= NOW() 
+        AND rstatus = 'on' 
+    ORDER BY
+        rdate DESC [22018-214]
+2023-07-14 19:35:59 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "joanir"; SQL statement:
+SELECT
+        * 
+    FROM
+        receita 
+    INNER JOIN
+        usuario 
+            ON uname = uid 
+    WHERE
+        rdate <= NOW() 
+        AND rstatus = 'on' 
+    ORDER BY
+        rdate DESC [22018-214]

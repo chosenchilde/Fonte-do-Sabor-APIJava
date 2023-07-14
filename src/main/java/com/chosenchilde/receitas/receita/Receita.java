@@ -1,104 +1,119 @@
 package com.chosenchilde.receitas.receita;
 
+import com.chosenchilde.receitas.usuario.Usuario;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
 import jakarta.persistence.Lob;
+import jakarta.persistence.ManyToOne;
 
 @Entity
 public class Receita {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long rcp_id;
+	private Long rid;
+	private String rdate;
+	
+	@ManyToOne
+	@JoinColumn(name = "rauthor")
+	private Usuario rauthor;
 
 	@Column(length = 127)
-	private String name;
+	private String rname;
 
 	@Column(length = 255)
-	private String rcp_img;
+	private String rimg;
 
 	@Lob
-	@Column(columnDefinition = "LONGTEXT")
-	private String rcp_content;
+	@Column(columnDefinition = "LONGTEXT", length = 65535)
+	private String rcontent;
 
 	@Lob
-	@Column(columnDefinition = "LONGTEXT")
-	private String ingredients;
+	@Column(columnDefinition = "LONGTEXT", length = 65535)
+	private String ringredients;
 
 	@Column
-	private int rcp_view;
+	private int rview;
 
 	@Column(length = 31)
-	private String rcp_status;
+	private String rstatus;
+	
 
-	@Column
-	private int rcp_author;
-
-	public Long getRcp_id() {
-		return rcp_id;
+	public Long getRid() {
+		return rid;
 	}
 
-	public void setRcp_id(Long rcp_id) {
-		this.rcp_id = rcp_id;
+	public void setRid(Long rid) {
+		this.rid = rid;
 	}
 
-	public String getName() {
-		return name;
+	public String getRname() {
+		return rname;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setRname(String rname) {
+		this.rname = rname;
 	}
 
-	public String getRcp_img() {
-		return rcp_img;
+	public String getRimg() {
+		return rimg;
 	}
 
-	public void setRcp_img(String rcp_img) {
-		this.rcp_img = rcp_img;
+	public void setRimg(String rimg) {
+		this.rimg = rimg;
 	}
 
-	public String getRcp_content() {
-		return rcp_content;
+	public String getRcontent() {
+		return rcontent;
 	}
 
-	public void setRcp_content(String rcp_content) {
-		this.rcp_content = rcp_content;
+	public void setRcontent(String rcontent) {
+		this.rcontent = rcontent;
 	}
 
-	public String getIngredients() {
-		return ingredients;
+	public String getRingredients() {
+		return ringredients;
 	}
 
-	public void setIngredients(String ingredients) {
-		this.ingredients = ingredients;
+	public void setRingredients(String ringredients) {
+		this.ringredients = ringredients;
 	}
 
-	public int getRcp_view() {
-		return rcp_view;
+	public int getRview() {
+		return rview;
 	}
 
-	public void setRcp_view(int rcp_view) {
-		this.rcp_view = rcp_view;
+	public void setRview(int rview) {
+		this.rview = rview;
 	}
 
-	public String getRcp_status() {
-		return rcp_status;
+	public String getRstatus() {
+		return rstatus;
 	}
 
-	public void setRcp_status(String rcp_status) {
-		this.rcp_status = rcp_status;
+	public void setRstatus(String rstatus) {
+		this.rstatus = rstatus;
 	}
 
-	public int getRcp_author() {
-		return rcp_author;
+	public Usuario getRauthor() {
+		return rauthor;
 	}
 
-	public void setRcp_author(int rcp_author) {
-		this.rcp_author = rcp_author;
+	public String getRdate() {
+		return rdate;
+	}
+
+	public void setRdate(String rdate) {
+		this.rdate = rdate;
+	}
+
+	public void setRauthor(Usuario rauthor) {
+		this.rauthor = rauthor;
 	}
 
 }

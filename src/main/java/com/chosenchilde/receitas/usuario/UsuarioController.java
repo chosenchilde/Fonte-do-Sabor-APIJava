@@ -6,8 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -21,12 +19,14 @@ public class UsuarioController {
 	@Autowired
 	private UsuarioRepository repository;
 
+	// Retorna uma lista de todos os usuários.
 	@GetMapping
 	public List<Usuario> getAll() {
-		return repository.findAll();
+		return repository.findAllUsers();
 	}
 
-	// Get
+	// Retorna um usuário pelo id. Exemplo:
+	// GET → http://localhost:8080/usuario/1
 	@GetMapping(path = "/{id}", produces = "application/json")
 	public String getUsuario(@PathVariable Long id) throws JsonProcessingException {
 
@@ -44,13 +44,15 @@ public class UsuarioController {
 	}
 
 	// Post
-	@PostMapping
-	public Usuario post(@RequestBody Usuario usuario) {
+	/*
+	 * @PostMapping
+	 
+	 public Usuario post(@RequestBody Usuario usuario) {
 
 		// O método "save()" de JPA cria um novo registro
 		// e armazena o objeto nele.
 		return repository.save(usuario);
-	}
+	} */
 
 	
 }
