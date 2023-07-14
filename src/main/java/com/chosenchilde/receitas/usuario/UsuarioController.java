@@ -22,7 +22,7 @@ public class UsuarioController {
 	// Retorna uma lista de todos os usuários.
 	@GetMapping
 	public List<Usuario> getAll() {
-		return repository.findAll();
+		return repository.findAllUsers();
 	}
 
 	// Retorna um usuário pelo id. Exemplo:

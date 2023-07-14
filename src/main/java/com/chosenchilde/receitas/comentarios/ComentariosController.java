@@ -23,13 +23,7 @@ public class ComentariosController {
 	private ComentariosRepository repository;
 
 	
-	// Retorna todas as receitas.
-	@GetMapping
-	public List<Comentarios> getAll() {
 
-		return repository.findAll();
-	}
-  
 	// Busca os comentários da receita pelo id. Exemplo:
 	// Retorna os comentários da receitas com o id 34.
 	// GET → http://localhost:8080/comentario/34
@@ -38,7 +32,7 @@ public class ComentariosController {
 		return repository.findAllComentariosByReceita(receitaId);
 	}
 	
-	// Post
+	// salva um novo comentário.
 	@PostMapping
 	public Comentarios post(@RequestBody Comentarios comentario) {
 

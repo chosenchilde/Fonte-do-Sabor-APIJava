@@ -253,3 +253,42 @@ SELECT * FROM comentarios WHERE status = 'on' AND recipe = ? ORDER BY date DESC 
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-07-13 21:26:10 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO Usuario (uid, udate, uname, uemail, upassword, uphoto, ubio, ubirth, utype, ustatus)\000d\000a\000d\000aVALUES\000d\000a\000d\000a(1, '2023-07-07', 'Joanir', 'usuario1@example.com', 'senha1', '/images/users/foto_1.jpg', 'Sou um experimentador de sabores!', '1990-01-01', 'Autor', 'on'),\000d\000a\000d\000a(2, '2023-07-07', 'Joaquim', 'usuario2@example.com', 'senha2', '/images/users/foto_2.jpg', 'Amante da gastronomia italiana.', '1990-01-02', 'Administrador', 'on'),\000d\000a\000d\000a(3, '2023-07-07', 'Joca', 'usuario3@example.com', 'senha3', '/images/users/foto_3.jpg', 'Explorando pratos vegetarianos e veganos., '[*]1990-01-03', 'Autor', 'on'),\000d\000a\000d\000a(4, '2023-07-07', 'Renata', 'usuario4@example.com', 'senha4', ''/images/users/foto_4.jpg', 'Apaixonada por doces e sobremesas.', '1990-01-04', 'Autor', 'on')"; expected "[, ::, AT, FORMAT, *, /, %, +, -, ||, NOT, IS, ILIKE, REGEXP, AND, OR, ,, )"; SQL statement:
+INSERT INTO Usuario (uid, udate, uname, uemail, upassword, uphoto, ubio, ubirth, utype, ustatus)
+
+VALUES
+
+(1, '2023-07-07', 'Joanir', 'usuario1@example.com', 'senha1', '/images/users/foto_1.jpg', 'Sou um experimentador de sabores!', '1990-01-01', 'Autor', 'on'),
+
+(2, '2023-07-07', 'Joaquim', 'usuario2@example.com', 'senha2', '/images/users/foto_2.jpg', 'Amante da gastronomia italiana.', '1990-01-02', 'Administrador', 'on'),
+
+(3, '2023-07-07', 'Joca', 'usuario3@example.com', 'senha3', '/images/users/foto_3.jpg', 'Explorando pratos vegetarianos e veganos., '1990-01-03', 'Autor', 'on'),
+
+(4, '2023-07-07', 'Renata', 'usuario4@example.com', 'senha4', ''/images/users/foto_4.jpg', 'Apaixonada por doces e sobremesas.', '1990-01-04', 'Autor', 'on') [42001-214]
+2023-07-13 21:26:21 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO Usuario (uid, udate, uname, uemail, upassword, uphoto, ubio, ubirth, utype, ustatus)\000d\000a\000d\000aVALUES\000d\000a\000d\000a(1, '2023-07-07', 'Joanir', 'usuario1@example.com', 'senha1', '/images/users/foto_1.jpg', 'Sou um experimentador de sabores!', '1990-01-01', 'Autor', 'on'),\000d\000a\000d\000a(2, '2023-07-07', 'Joaquim', 'usuario2@example.com', 'senha2', '/images/users/foto_2.jpg', 'Amante da gastronomia italiana.', '1990-01-02', 'Administrador', 'on'),\000d\000a\000d\000a(3, '2023-07-07', 'Joca', 'usuario3@example.com', 'senha3', '/images/users/foto_3.jpg', 'Explorando pratos vegetarianos e veganos., '[*]1990-01-03', 'Autor', 'on'),\000d\000a\000d\000a(4, '2023-07-07', 'Renata', 'usuario4@example.com', 'senha4', ''/images/users/foto_4.jpg', 'Apaixonada por doces e sobremesas.', '1990-01-04', 'Autor', 'on')"; expected "[, ::, AT, FORMAT, *, /, %, +, -, ||, NOT, IS, ILIKE, REGEXP, AND, OR, ,, )"; SQL statement:
+INSERT INTO Usuario (uid, udate, uname, uemail, upassword, uphoto, ubio, ubirth, utype, ustatus)
+
+VALUES
+
+(1, '2023-07-07', 'Joanir', 'usuario1@example.com', 'senha1', '/images/users/foto_1.jpg', 'Sou um experimentador de sabores!', '1990-01-01', 'Autor', 'on'),
+
+(2, '2023-07-07', 'Joaquim', 'usuario2@example.com', 'senha2', '/images/users/foto_2.jpg', 'Amante da gastronomia italiana.', '1990-01-02', 'Administrador', 'on'),
+
+(3, '2023-07-07', 'Joca', 'usuario3@example.com', 'senha3', '/images/users/foto_3.jpg', 'Explorando pratos vegetarianos e veganos., '1990-01-03', 'Autor', 'on'),
+
+(4, '2023-07-07', 'Renata', 'usuario4@example.com', 'senha4', ''/images/users/foto_4.jpg', 'Apaixonada por doces e sobremesas.', '1990-01-04', 'Autor', 'on') [42001-214]
+2023-07-13 21:27:09 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO Usuario (uid, udate, uname, uemail, upassword, uphoto, ubio, ubirth, utype, ustatus)\000d\000a\000d\000aVALUES\000d\000a\000d\000a(1, '2023-07-07', 'Joanir', 'usuario1@example.com', 'senha1', '/images/users/foto_1.jpg', 'Sou um experimentador de sabores!', '1990-01-01', 'Autor', 'on'),\000d\000a\000d\000a(2, '2023-07-07', 'Joaquim', 'usuario2@example.com', 'senha2', '/images/users/foto_2.jpg', 'Amante da gastronomia italiana.', '1990-01-02', 'Administrador', 'on'),\000d\000a\000d\000a(3, '2023-07-07', 'Joca', 'usuario3@example.com', 'senha3', '/images/users/foto_3.jpg', 'Explorando pratos vegetarianos e veganos.', '1990-01-03', 'Autor', 'on'),\000d\000a\000d\000a(4, '2023-07-07', 'Renata', 'usuario4@example.com', 'senha4', ''/images/users/foto_4.jpg', 'Apaixonada por doces e sobremesas.', '1990-01-04', 'Autor', 'on[*]');"; SQL statement:
+INSERT INTO Usuario (uid, udate, uname, uemail, upassword, uphoto, ubio, ubirth, utype, ustatus)
+
+VALUES
+
+(1, '2023-07-07', 'Joanir', 'usuario1@example.com', 'senha1', '/images/users/foto_1.jpg', 'Sou um experimentador de sabores!', '1990-01-01', 'Autor', 'on'),
+
+(2, '2023-07-07', 'Joaquim', 'usuario2@example.com', 'senha2', '/images/users/foto_2.jpg', 'Amante da gastronomia italiana.', '1990-01-02', 'Administrador', 'on'),
+
+(3, '2023-07-07', 'Joca', 'usuario3@example.com', 'senha3', '/images/users/foto_3.jpg', 'Explorando pratos vegetarianos e veganos.', '1990-01-03', 'Autor', 'on'),
+
+(4, '2023-07-07', 'Renata', 'usuario4@example.com', 'senha4', ''/images/users/foto_4.jpg', 'Apaixonada por doces e sobremesas.', '1990-01-04', 'Autor', 'on'); [42000-214]
