@@ -30,7 +30,7 @@ public class Comentario {
 	private String date;
 	
 	@Column(length = 31)
-	private String user_status;
+	private String status;
 	
 	@Column
 	private int recipe;
@@ -103,11 +103,11 @@ public class Comentario {
 	}
 
 	public String getUser_status() {
-		return user_status;
+		return status;
 	}
 
 	public void setUser_status(String user_status) {
-		this.user_status = user_status;
+		this.status = user_status;
 	}
 
 	

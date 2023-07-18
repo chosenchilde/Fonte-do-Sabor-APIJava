@@ -20,8 +20,13 @@ public interface ReceitaRepository extends JpaRepository<Receita, Long> {
 	// Busca todas as 5 receitas mais visualizadas. Exemplo:
 	// GET → http://domain.api/receita/home/5
 	@Query(value = "SELECT * FROM RECEITA WHERE " + DEFAULTPARAMS
-			+ " ORDER BY RVIEW DESC LIMIT :limit", nativeQuery = true)
+			+ " ORDER BY RDATE DESC LIMIT :limit", nativeQuery = true)
 	List<Receita> findRecipeWithLimit(@Param("limit") int limit);
+	
+	//Busca todas as receitas mais vistas utilizando um limite.
+	@Query(value = "SELECT * FROM RECEITA WHERE " + DEFAULTPARAMS
+			+ " ORDER BY RVIEW DESC LIMIT :limit", nativeQuery = true)
+	List<Receita> findRecipeMostViewed(@Param("limit") int limit);
      
 	// TESTADO OK
 	// Atualiza a quantidade de views da receita pelo Id.

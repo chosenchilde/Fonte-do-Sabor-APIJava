@@ -35,8 +35,13 @@ public class ReceitaController {
 	// Busca todas as 5 receitas mais visualizadas. Exemplo:
 	// GET → http://domain.api/receita/home/5
 	@GetMapping("/home/{limit}")
-	public List<Receita> getByViews(@PathVariable int limit) {
+	public List<Receita> getByDate(@PathVariable int limit) {
 		return repository.findRecipeWithLimit(limit);
+	}
+	
+	@GetMapping("/viewed/{limit}")
+	public List<Receita> getByView(@PathVariable int limit) {
+		return repository.findRecipeMostViewed(limit);
 	}
 
 	// Busca receita pelo id. Exemplo:
